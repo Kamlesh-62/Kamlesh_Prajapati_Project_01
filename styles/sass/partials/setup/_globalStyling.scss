@@ -19,8 +19,28 @@ li {
 }
 p{
     color: #1f2022;
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 1.4px;
+    font-size: 18px;
     line-height: 29px;
     font-family: 'Lato', sans-serif;
+}
+h1{
+    letter-spacing: 2px;
+    font-weight: normal;
+    width: 60%;
+    font-size: 50px;
+    line-height: 64px;
+}
+h2{
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 68px;
+}
+.btn{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1.7px;
+    font-size: 23px;
+    padding: 0.5rem 1.5rem;
+    text-transform: lowercase;
 }

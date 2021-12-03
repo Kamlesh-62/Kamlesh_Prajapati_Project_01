@@ -272,10 +272,33 @@ li {
 
 p {
   color: #1f2022;
-  letter-spacing: 2px;
-  font-size: 20px;
+  letter-spacing: 1.4px;
+  font-size: 18px;
   line-height: 29px;
   font-family: "Lato", sans-serif;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  width: 60%;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+h2 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 68px;
+}
+
+.btn {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1.7px;
+  font-size: 23px;
+  padding: 0.5rem 1.5rem;
+  text-transform: lowercase;
 }
 
 #home {
@@ -290,12 +313,15 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 1rem 0;
 }
 #home nav h3 {
   font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: 1.7px;
   font-size: 24px;
 }
 #home nav .menu {
@@ -317,7 +343,7 @@ p {
           justify-content: space-evenly;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
-  font-size: 20x;
+  font-size: 18px;
 }
 #home nav .menu ul a {
   color: black;
@@ -326,8 +352,43 @@ p {
 #home nav .menu .hamburger-btn {
   visibility: hidden;
 }
-#home .hero-page h1 {
-  letter-spacing: 2px;
-  font-weight: normal;
-  width: 44%;
+
+.technique-section {
+  background-color: #ccedfb;
+  position: relative;
+  padding: 5rem 0;
+}
+.technique-section .scissor-image img {
+  width: calc(100% / 2);
+  position: absolute;
+  top: -300px;
+}
+.technique-section .technique {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.technique-section .technique .technique-details {
+  width: 60%;
+  margin-top: 1.5rem;
+}
+.technique-section .technique .technique-details .find-btn {
+  background-color: #1a315c;
+  color: white;
+  border: 2px solid #1a315c;
+}
+
+.technique-image {
+  position: relative;
+  z-index: 1;
+}
+.technique-image::before {
+  content: "";
+  width: 110%;
+  height: 100%;
+  background: #1a315c;
+  position: absolute;
 }
