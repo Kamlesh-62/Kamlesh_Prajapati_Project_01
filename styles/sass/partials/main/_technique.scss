@@ -1,0 +1,40 @@
+.technique-section{
+    background-color: #ccedfb;
+    position: relative;
+    padding: 5rem 0;
+
+    .scissor-image img{
+        width: calc(100% / 2);
+        position: absolute;
+        top: -300px;
+    }
+
+    .technique {
+        display: flex;
+        justify-content: space-between;
+
+        .technique-details{
+            width: 60%;
+            margin-top: 1.5rem;
+            
+            .find-btn{
+                background-color:#1a315c;
+                color: white;
+                border: 2px solid #1a315c;
+            }
+        }
+    }
+}
+.technique-image{
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        width: 110%;
+        height: 100%;
+        background: #1a315c;
+        position: absolute;
+    }
+}
+        
