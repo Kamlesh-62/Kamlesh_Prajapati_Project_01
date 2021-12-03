@@ -237,15 +237,16 @@ html {
 
 .skip-link {
   position: absolute;
-  left: -1000px;
+  left: 400px;
   top: 5px;
   z-index: 999;
   background: white;
   color: black;
+  visibility: hidden;
 }
 
 .skip-link:focus {
-  left: 0;
+  visibility: visible;
 }
 
 html {
@@ -267,4 +268,66 @@ a {
 
 li {
   list-style: none;
+}
+
+p {
+  color: #1f2022;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 29px;
+  font-family: "Lato", sans-serif;
+}
+
+#home {
+  background: url("../../../../textilee-assets/header-home.jpg");
+  height: 80vh;
+  background-position: center;
+}
+#home nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+}
+#home nav h3 {
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+#home nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+#home nav .menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20x;
+}
+#home nav .menu ul a {
+  color: black;
+  text-transform: uppercase;
+}
+#home nav .menu .hamburger-btn {
+  visibility: hidden;
+}
+#home .hero-page h1 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  width: 44%;
 }

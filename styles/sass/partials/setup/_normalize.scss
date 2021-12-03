@@ -11,13 +11,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 // this code for skip the main content for accessibility
 .skip-link {
   position: absolute;
-  left: -1000px;
+  left: 400px;
   top: 5px;
   z-index: 999;
   background: white;
   color: black;
+  visibility: hidden;
 }
 
 .skip-link:focus {
-  left: 0;
+  visibility: visible;
 }
