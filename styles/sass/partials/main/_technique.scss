@@ -14,8 +14,8 @@
         justify-content: space-between;
 
         .technique-details{
-            width: 60%;
-            margin-top: 1.5rem;
+            width: 70%;
+            margin-top: 2.5rem;
             
             .find-btn{
                 background-color:#1a315c;
@@ -25,16 +25,3 @@
         }
     }
 }
-.technique-image{
-    position: relative;
-    z-index: 1;
-
-    &::before{
-        content: "";
-        width: 110%;
-        height: 100%;
-        background: #1a315c;
-        position: absolute;
-    }
-}
-        

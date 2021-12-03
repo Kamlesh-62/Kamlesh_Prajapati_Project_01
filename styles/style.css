@@ -254,10 +254,11 @@ html {
   padding: 0;
   font-size: 125%;
   font-family: "Pacifico", cursive;
+  overflow-x: hidden;
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1280px;
   width: 85%;
   margin: 0 auto;
 }
@@ -372,8 +373,8 @@ h2 {
           justify-content: space-between;
 }
 .technique-section .technique .technique-details {
-  width: 60%;
-  margin-top: 1.5rem;
+  width: 70%;
+  margin-top: 2.5rem;
 }
 .technique-section .technique .technique-details .find-btn {
   background-color: #1a315c;
@@ -381,14 +382,21 @@ h2 {
   border: 2px solid #1a315c;
 }
 
-.technique-image {
-  position: relative;
-  z-index: 1;
-}
-.technique-image::before {
-  content: "";
-  width: 110%;
-  height: 100%;
+.main-gallery-section {
   background: #1a315c;
-  position: absolute;
+  padding: 5rem 0;
+}
+.main-gallery-section .main-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-gallery-section .main-gallery .main-img {
+  width: calc((100% / 3) - 2rem);
+}
+.main-gallery-section .main-gallery .main-img img {
+  width: 100%;
 }
