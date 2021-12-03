@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e06cf57877.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <!-- header section start here -->
+    <header id="home">
+        <!-- nav section start here -->
         <nav>
             <div>
                 <h3>Textilee</h3>
             </div>
-            <div>
+            <!-- Skip button for accessbility -->
+            <div class="skip-link">
                 <ul>
                     <li><a href="#footer">Skip to main content.</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
+            <!-- header menu here -->
+            <div class="menu">
+                <ul class="menu-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="./blog.html">blog</a></li>
                     <li><a href="./contact.html">contact</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="hamburger-btn">
                 <span><i class="fas fa-bars"></i></span>
             </div>
         </nav>
-        <div>
+        <!-- navbar section end here -->
+        <!-- hero page here  -->
+        <div class="hero-page">
             <h1>Textiles for all projects in mind</h1>
         </div>
     </header>
+    <!-- header end here -->
+    <!-- main section start here -->
     <main>
-        <section>
-            <div>
+        <!-- techniques section here -->
+        <!--  scissors and thred image -->
+        <section class="technique-section">
+            <div class="image">
                 <img src="./textilee-assets/home-box-header.png" alt="Thread and scissors">
             </div>
-            <div>
-                <div>
+            <!-- technique detais  -->
+            <div class="technique wrapper">
+                <div class="technique-details">
                     <h2>Learn new techniques</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam illo nam rem error aperiam culpa quidem veritatis mollitia, dolorum maxime ratione quam aut necessitatibus sapiente, vel amet, ipsam temporibus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam illo nam rem error
+                        aperiam culpa quidem veritatis mollitia, dolorum maximeratione quam aut necessitatibus
+                        sapiente, vel amet, ipsam temporibus!</p>
+                    <button class="learn-btn"></button>
                 </div>
                 <div>
-                    <img src="./textilee-assets/small-box.jpg" alt="">
+                    <img src="./textilee-assets/small-box.jpg" alt=" Employee designing clothes">
                 </div>
             </div>
         </section>
-        <section>
+        <!-- technique section end here -->
+        <!-- gallery section -->
+        <section class=" main-gallery wrapper">
             <div>
                 <img src="./textilee-assets/gallery-image-1.jpg" alt="">
             </div>
@@ -61,56 +82,87 @@
                 <img src="./textilee-assets/gallery-image-3.jpg" alt="">
             </div>
         </section>
-        <section>
-            <div>
-                <div>
+        <!-- gallery section end here -->
+        <!-- facility section start here -->
+        <section class="facility">
+            <div class="facility-section wrapper">
+                <div class="facility-sub-list">
                     <h2>Upcoming Events</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem
+                        reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
                 </div>
-                <div>
+                <div class="facility-sub-list">
                     <h2>Community</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem
+                        reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
                 </div>
-                <div>
+                <div class="facility-sub-list">
                     <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem
+                        reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
                 </div>
-                <div>
+                <div class="facility-sub-list">
                     <h2>Get in Touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem
+                        reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div>
-                    <img src="./textilee-assets/left-image.jpg" alt="">
+        <!-- facility section end here -->
+        <!-- about (online store and location) section -->
+        <section class="about">
+            <!-- online market  -->
+            <div class="online-market-section">
+                <div class="market-img">
+                    <img src="./textilee-assets/left-image.jpg" alt="Silky materail">
                 </div>
-                <div>
+                <div class="market-details">
                     <h2>Discover our online market</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aut rem ipsam enim eum repellat deleniti molestiae doloribus accusantium perspiciatis facere ad assumenda sapiente nulla dolorum quam. Optio dolores mollitia similique in consequatur perspiciatis iste.</p>
-                    <button>read more</button>
-                    <div>
-                        <img src="./textilee-assets/right-image.jpg" alt="">
-                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aut rem ipsam enim eum
+                        repellat deleniti molestiae doloribus accusantium perspiciatis facere ad assumenda sapiente
+                        nulla dolorum quam. Optio dolores mollitia similique in consequatur perspiciatis iste.</p>
+                    <button class="read-btn">read more</button>
+                </div>
+            </div>
+            <!-- new location -->
+            <div class="new-location-section">
+                <div class="location-details">
+                    <h2>new location</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aut rem ipsam enim eum
+                        repellat deleniti molestiae doloribus accusantium perspiciatis facere ad assumenda sapiente
+                        nulla dolorum quam. Optio dolores mollitia similique in consequatur perspiciatis iste.</p>
+                    <button class="read-btn">read more</button>
+                </div>
+                <div class="location-img">
+                    <img src="./textilee-assets/right-image.jpg" alt="employee mesuring clothes">
                 </div>
             </div>
         </section>
+        <!-- about section end here -->
+        <!-- main banner  -->
         <section>
-            <div>
+            <div class="main-banner">
                 <!-- background image -->
             </div>
         </section>
-        <section>
-            <div>
+        <!-- main banner end here -->
+        <!-- search by style section start here -->
+        <section class="search-style-section">
+            <div class="seacrh-style wrapper">
                 <h2>Search by style</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore eum accusamus. Assumenda aperiam voluptatem sapiente ullam, earum sunt aliquid molestias expedita aliquam, consectetur doloribus veritatis corporis repellendus fugiat impedit porro atque eos itaque qui?</p>
-                <button>find out more</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore eum accusamus. Assumenda
+                    aperiam voluptatem sapiente ullam, earum sunt aliquid molestiasexpedita aliquam, consectetur
+                    doloribus veritatis corporis repellendus fugiat impedit porroatque eos itaque qui?</p>
+                <button class="search-btn">find out more</button>
             </div>
         </section>
+        <!-- search by style section end here -->
     </main>
+    <!-- main section end here -->
+    <!-- footer section start -->
     <footer>
         <p>Copyright &copy; 2019 <span><a href=""></a>Juno College</span></p>
     </footer>
+    <!-- footer section end here -->
 </body>
 </html>
