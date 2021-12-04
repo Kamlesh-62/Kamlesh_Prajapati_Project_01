@@ -1,42 +1,45 @@
 
 #home{
-    background: url('../../../../textilee-assets/header-home.jpg');
+    background: url('../textilee-assets/header-home.jpg');
         height: 80vh;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 1rem 0;    
-    
-        h3{
-            font-weight: normal;
-            letter-spacing: 1.7px;
-            font-size: 24px;
-        }
-        .menu {
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;    
+
+    h3{
+        font-weight: normal;
+        letter-spacing: 1.7px;
+        font-size: 24px;
+    }
+    .menu {
         display: flex;
         justify-content: space-between;
         width: 60%;
 
-        ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            font-family: 'Lato', sans-serif;
-            letter-spacing: 2px;
-            font-size: 18px;
-            
-                a{
-                    color: black;
-                    text-transform: uppercase;
-                }
-                }
-                .hamburger-btn{
-                    visibility: hidden;
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 2px;
+        font-size: 18px;
+        
+            a{
+                color: black;
+                text-transform: uppercase;
             }
+            }
+            .hamburger-btn{
+                visibility: hidden;
         }
     }
 }
+

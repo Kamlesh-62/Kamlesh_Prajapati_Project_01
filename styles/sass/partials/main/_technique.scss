@@ -5,6 +5,7 @@
 
     .scissor-image img{
         width: calc(100% / 2);
+        max-width: 700px;
         position: absolute;
         top: -300px;
     }
@@ -12,10 +13,11 @@
     .technique {
         display: flex;
         justify-content: space-between;
+        margin-top: 2rem;
+        align-items: center;
 
         .technique-details{
-            width: 70%;
-            margin-top: 2.5rem;
+            width: 60%;
             
             .find-btn{
                 background-color:#1a315c;
@@ -25,3 +27,22 @@
         }
     }
 }
+// design for technique image
+.technique-image{
+    position: relative;
+    
+    img{
+        position: relative;
+      
+    }
+}
+.technique-image::before{
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background-color: #0cadc0;
+            position: absolute;
+            top: 10px;
+            right:13px ;
+        }
+        

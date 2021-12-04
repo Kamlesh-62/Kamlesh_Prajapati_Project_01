@@ -1,0 +1,46 @@
+.facilities{
+    background: #ccedfb;
+    padding: 5rem 0;
+
+    .facilities-section{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .facility{
+            width: calc(100% / 2);
+
+            h2{
+                font-size: 40px;
+            }
+
+            p{
+                margin-left: 4rem;
+            }
+        }
+    }
+}
+// font awesome for facility headings
+.facility h2::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f274";
+    display: inline;
+    padding: 0.6rem;
+    margin-right: 1rem;
+    background-color: #0cadc0;
+    border-radius: 50%;
+    color: #ccedfb;
+}
+.community h2::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c0";
+    font-size: 35px;
+}
+.blog h2::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f781"; 
+}
+.getInTouch h2::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+}
