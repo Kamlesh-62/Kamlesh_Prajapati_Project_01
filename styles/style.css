@@ -265,7 +265,7 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1a315c;
 }
 
 li {
@@ -286,6 +286,7 @@ h1 {
   width: 60%;
   font-size: 50px;
   line-height: 64px;
+  color: #1a315c;
 }
 
 h2 {
@@ -293,6 +294,7 @@ h2 {
   font-weight: normal;
   font-size: 40px;
   line-height: 68px;
+  color: #1a315c;
 }
 
 .btn {
@@ -351,7 +353,6 @@ h2 {
   font-size: 18px;
 }
 .nav-bar .menu ul a {
-  color: black;
   text-transform: uppercase;
 }
 .nav-bar .menu .hamburger-btn {
@@ -473,4 +474,103 @@ h2 {
 .getInTouch h2::before {
   font-family: "Font Awesome 5 Free";
   content: "";
+}
+
+.about {
+  background-color: #1a315c;
+}
+
+.online-market-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.online-market-section .market-img {
+  width: 40%;
+  height: 100%;
+}
+.online-market-section .market-img img {
+  width: 100%;
+  position: relative;
+  top: -40px;
+}
+.online-market-section .market-details {
+  width: 60%;
+  padding: 2rem 5rem 2rem 13rem;
+}
+.online-market-section .market-details h2 {
+  color: #fff;
+  margin: 0;
+}
+.online-market-section .market-details p {
+  color: #fff;
+}
+.online-market-section .market-details .read-btn {
+  background-color: #ccedfb;
+  border: 2px solid #ccedfb;
+}
+
+.new-location-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.new-location-section .location-img {
+  width: 40%;
+  height: 100%;
+}
+.new-location-section .location-img img {
+  width: 100%;
+  position: relative;
+  bottom: -50px;
+}
+.new-location-section .location-details {
+  width: 60%;
+  padding: 2rem 13rem 2rem 4rem;
+  text-align: right;
+}
+.new-location-section .location-details h2 {
+  color: #fff;
+  margin: 0;
+}
+.new-location-section .location-details p {
+  color: #fff;
+}
+.new-location-section .location-details .read-btn {
+  background-color: #ccedfb;
+  border: 2px solid #ccedfb;
+}
+
+.location-img,
+.market-img {
+  position: relative;
+}
+.location-img img,
+.market-img img {
+  position: relative;
+}
+
+.location-img::before,
+.market-img::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: #0cadc0;
+  position: absolute;
+}
+
+.location-img::before {
+  bottom: -60px;
+  left: -10px;
+}
+
+.market-img::before {
+  top: -30px;
+  right: -10px;
 }

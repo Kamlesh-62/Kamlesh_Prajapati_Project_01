@@ -1,0 +1,96 @@
+.about{
+    background-color: $secondaryBackgroundColor;
+}
+.online-market-section{
+    display: flex;
+    align-items: center;
+
+    .market-img{
+        width: 40%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            position: relative;
+            top: -40px;
+        }
+    }
+
+    .market-details{
+        width: 60%;
+        padding: 2rem 5rem 2rem 13rem;
+
+        h2{
+            color: $whiteColor;
+            margin: 0;
+        }
+        p{
+            color:$whiteColor;
+        }
+        .read-btn{
+            background-color:$primaryBackgroundColor;
+            border: 2px solid $primaryBackgroundColor;
+        }
+    }
+    
+}
+.new-location-section{
+    display: flex;
+    align-items: center;
+
+    .location-img{
+        width: 40%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            position: relative;
+            bottom: -50px;
+        }
+    }
+
+    .location-details{
+        width: 60%;
+        padding: 2rem 13rem 2rem 4rem;
+        text-align: right;
+
+        h2{
+            color: $whiteColor;
+            margin: 0;
+        }
+        p{
+            color:$whiteColor;
+        }
+        .read-btn{
+            background-color:$primaryBackgroundColor;
+            border: 2px solid $primaryBackgroundColor;
+        }
+    }
+    
+}
+
+.location-img,
+.market-img{
+    position: relative;
+    
+    img{
+        position: relative;
+      
+    }
+}
+.location-img::before,
+.market-img::before{
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background-color: #0cadc0;
+            position: absolute;
+}
+.location-img::before{
+    bottom: -60px;
+    left: -10px
+}
+.market-img::before{
+    top: -30px;
+    right: -10px
+}

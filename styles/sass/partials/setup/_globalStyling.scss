@@ -1,5 +1,6 @@
 // ========global styling======
 
+
 html{
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ html{
 }
 a{
     text-decoration: none; 
-    color: black;
+    color: #1a315c;
 }
 li {
     list-style: none;
@@ -32,12 +33,14 @@ h1{
     width: 60%;
     font-size: 50px;
     line-height: 64px;
+    color: #1a315c;
 }
 h2{
     letter-spacing: 2px;
     font-weight: normal;
     font-size: 40px;
     line-height: 68px;
+    color:#1a315c ;
 }
 .btn{
     font-family: 'Pacifico', cursive;
