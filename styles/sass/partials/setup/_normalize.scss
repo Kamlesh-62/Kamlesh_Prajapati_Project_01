@@ -14,8 +14,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   left: 9000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black;
+  background: $whiteColor;
+  color: $blackColor;
   // visibility: hidden;
 }
 

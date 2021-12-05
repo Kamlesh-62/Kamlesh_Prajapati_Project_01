@@ -241,8 +241,8 @@ html {
   left: 9000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 
 .skip-link:focus {
@@ -258,7 +258,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1180px;
+  max-width: 1080px;
   width: 85%;
   margin: 0 auto;
 }
@@ -273,7 +273,7 @@ li {
 }
 
 p {
-  color: #1f2022;
+  color: #1a315c;
   letter-spacing: 1.4px;
   font-size: 18px;
   line-height: 29px;
@@ -283,10 +283,10 @@ p {
 h1 {
   letter-spacing: 2px;
   font-weight: normal;
-  width: 60%;
-  font-size: 50px;
+  font-size: 54px;
   line-height: 64px;
   color: #1a315c;
+  width: 60%;
 }
 
 h2 {
@@ -327,9 +327,11 @@ h2 {
   padding: 1rem 0;
 }
 .nav-bar h3 {
+  letter-spacing: 2px;
   font-weight: normal;
-  letter-spacing: 1.7px;
   font-size: 24px;
+  line-height: 0;
+  color: #000;
 }
 .nav-bar .menu {
   display: -webkit-box;
@@ -387,8 +389,9 @@ h2 {
 }
 .technique-section .technique .technique-details .find-btn {
   background-color: #1a315c;
-  color: white;
+  color: #fff;
   border: 2px solid #1a315c;
+  letter-spacing: 2px;
 }
 
 .technique-image {
@@ -409,7 +412,7 @@ h2 {
 }
 
 .main-gallery-section {
-  background: #1a315c;
+  background: #283f4d;
   padding: 5rem 0;
 }
 .main-gallery-section .main-gallery {
@@ -477,7 +480,7 @@ h2 {
 }
 
 .about {
-  background-color: #1a315c;
+  background-color: #283f4d;
 }
 
 .online-market-section {
@@ -494,8 +497,11 @@ h2 {
 }
 .online-market-section .market-img img {
   width: 100%;
+  height: 100%;
   position: relative;
-  top: -40px;
+  top: -60px;
+  -webkit-box-shadow: 12px 12px #0cadc0;
+          box-shadow: 12px 12px #0cadc0;
 }
 .online-market-section .market-details {
   width: 60%;
@@ -527,8 +533,11 @@ h2 {
 }
 .new-location-section .location-img img {
   width: 100%;
+  height: 100%;
   position: relative;
   bottom: -50px;
+  -webkit-box-shadow: -12px 12px #0cadc0;
+          box-shadow: -12px 12px #0cadc0;
 }
 .new-location-section .location-details {
   width: 60%;
@@ -545,32 +554,4 @@ h2 {
 .new-location-section .location-details .read-btn {
   background-color: #ccedfb;
   border: 2px solid #ccedfb;
-}
-
-.location-img,
-.market-img {
-  position: relative;
-}
-.location-img img,
-.market-img img {
-  position: relative;
-}
-
-.location-img::before,
-.market-img::before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background-color: #0cadc0;
-  position: absolute;
-}
-
-.location-img::before {
-  bottom: -60px;
-  left: -10px;
-}
-
-.market-img::before {
-  top: -30px;
-  right: -10px;
 }

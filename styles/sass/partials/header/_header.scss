@@ -15,9 +15,8 @@
     padding: 1rem 0;    
 
     h3{
-        font-weight: normal;
-        letter-spacing: 1.7px;
-        font-size: 24px;
+        @include fontSize (24px, 0, $blackColor);
+        
     }
     .menu {
         display: flex;

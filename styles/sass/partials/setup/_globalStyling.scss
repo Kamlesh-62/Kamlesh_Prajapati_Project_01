@@ -5,45 +5,37 @@ html{
     margin: 0;
     padding: 0;
     font-size: 125%;
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryFontStyle;
     overflow-x: hidden;
 }
 .wrapper{
-    max-width:1180px;
+    max-width:1080px;
     width: 85%;
     margin: 0 auto;
 }
 a{
     text-decoration: none; 
-    color: #1a315c;
+    color: $primaryColor;
 }
 li {
     list-style: none;
 }
 p{
-    color: #1f2022;
+    color: $primaryColor;
     letter-spacing: 1.4px;
     font-size: 18px;
     line-height: 29px;
-    font-family: 'Lato', sans-serif;
+    font-family: $secondaryFontStyle;
 }
 h1{
-    letter-spacing: 2px;
-    font-weight: normal;
+    @include fontSize (54px, 64px, $primaryColor);
     width: 60%;
-    font-size: 50px;
-    line-height: 64px;
-    color: #1a315c;
 }
 h2{
-    letter-spacing: 2px;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 68px;
-    color:#1a315c ;
+    @include fontSize (40px, 68px, $primaryColor);
 }
 .btn{
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryFontStyle;
     letter-spacing: 1.7px;
     font-size: 23px;
     padding: 0.5rem 1.5rem;
