@@ -354,8 +354,24 @@ h2 {
   letter-spacing: 2px;
   font-size: 18px;
 }
+.nav-bar .menu ul li :hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 .nav-bar .menu ul a {
   text-transform: uppercase;
+}
+.nav-bar .menu ul li:first-child a {
+  position: relative;
+}
+.nav-bar .menu ul li:first-child a::before {
+  content: " ";
+  height: 2px;
+  position: absolute;
+  width: 90%;
+  background-color: #0cadc0;
+  left: 5%;
+  bottom: -5px;
 }
 .nav-bar .menu .hamburger-btn {
   visibility: hidden;
@@ -390,6 +406,12 @@ h2 {
 .technique-section .technique .technique-details .find-btn {
   background-color: #1a315c;
   color: #fff;
+  border: 2px solid #1a315c;
+  letter-spacing: 2px;
+}
+.technique-section .technique .technique-details .find-btn:hover {
+  background-color: #ccedfb;
+  color: #1a315c;
   border: 2px solid #1a315c;
   letter-spacing: 2px;
 }
@@ -518,6 +540,12 @@ h2 {
   background-color: #ccedfb;
   border: 2px solid #ccedfb;
 }
+.online-market-section .market-details .read-btn:hover {
+  background-color: #283f4d;
+  color: #ccedfb;
+  border: 2px solid #ccedfb;
+  letter-spacing: 2px;
+}
 
 .new-location-section {
   display: -webkit-box;
@@ -554,4 +582,48 @@ h2 {
 .new-location-section .location-details .read-btn {
   background-color: #ccedfb;
   border: 2px solid #ccedfb;
+}
+.new-location-section .location-details .read-btn:hover {
+  background-color: #283f4d;
+  color: #ccedfb;
+  border: 2px solid #ccedfb;
+  letter-spacing: 2px;
+}
+
+#main-banner {
+  background: url("../textilee-assets/banner.jpg") center/cover no-repeat;
+  height: 60vh;
+}
+
+.search-style-section {
+  background: #ccedfb;
+  padding: 5rem 0;
+}
+.search-style-section .search-style {
+  text-align: center;
+}
+.search-style-section .search-style .find-btn {
+  background-color: #1a315c;
+  color: #fff;
+  border: 2px solid #1a315c;
+  letter-spacing: 2px;
+}
+.search-style-section .search-style .find-btn:hover {
+  background-color: #ccedfb;
+  color: #1a315c;
+  border: 2px solid #1a315c;
+  letter-spacing: 2px;
+}
+
+footer {
+  background: #000;
+  padding: 0.5rem 0;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+footer p a {
+  color: #fff;
 }

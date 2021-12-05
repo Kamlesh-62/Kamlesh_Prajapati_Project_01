@@ -27,14 +27,31 @@
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        font-family: 'Lato', sans-serif;
+        font-family: $secondaryFontStyle;
         letter-spacing: 2px;
         font-size: 18px;
+
+        li :hover{
+            transform: scale(1.05);
+        }
         
-            a{
-                text-transform: uppercase;
+        a{
+            text-transform: uppercase;
+        }
+        li:first-child a{
+            position: relative;
+
+            &::before {
+                content: " ";
+                height: 2px;
+                position: absolute;
+                width: 90%;
+                background-color: $designColor;
+                left: 5%;
+                bottom: -5px;                
             }
-            }
+        }
+    }
             .hamburger-btn{
                 visibility: hidden;
         }

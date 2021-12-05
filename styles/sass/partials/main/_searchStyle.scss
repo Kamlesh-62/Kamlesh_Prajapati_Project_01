@@ -1,0 +1,16 @@
+.search-style-section{
+    background: $primaryBackgroundColor;
+    padding: 5rem 0;
+
+    .search-style{
+        text-align: center;
+
+        .find-btn{
+                @include button ($primaryColor, $whiteColor, $primaryColor);
+
+                &:hover{
+                    @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
+                }
+            }
+    }
+}

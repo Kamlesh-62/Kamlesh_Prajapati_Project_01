@@ -20,7 +20,11 @@
             width: 60%;
             
             .find-btn{
-                @include button ($primaryColor, $whiteColor, $primaryColor)
+                @include button ($primaryColor, $whiteColor, $primaryColor);
+
+                &:hover{
+                    @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
+                }
             }
         }
     }   

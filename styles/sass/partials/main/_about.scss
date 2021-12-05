@@ -32,6 +32,10 @@
         .read-btn{
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
+
+            &:hover{
+                    @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
+                }
         }
     }
     
@@ -68,6 +72,10 @@
         .read-btn{
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
+
+            &:hover{
+                    @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
+                }
         }
     }
     
