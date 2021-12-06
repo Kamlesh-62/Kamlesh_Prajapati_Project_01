@@ -6,21 +6,22 @@
     align-items: center;
 
     .market-img{
-        width: 40%;
+        width: 45%;
         height: 100%;
 
         img{
             width: 100%;
+            min-width: 430px;
             height: 100%;
             position: relative;
-            top: -60px;
+            top: -40px;
             box-shadow: 12px 12px $designColor;
         }
     }
 
     .market-details{
-        width: 60%;
-        padding: 2rem 5rem 2rem 13rem;
+        width: 55%;
+        padding: 2rem 5rem 2rem 5rem;
 
         h2{
             color: $whiteColor;
@@ -45,11 +46,12 @@
     align-items: center;
 
     .location-img{
-        width: 40%;
+        width: 45%;
         height: 100%;
 
         img{
             width: 100%;
+            min-width: 430px;
             height: 100%;
             position: relative;
             bottom: -50px;
@@ -58,8 +60,8 @@
     }
 
     .location-details{
-        width: 60%;
-        padding: 2rem 13rem 2rem 4rem;
+        width: 55%;
+        padding: 2rem 5.7rem 2rem 4rem;
         text-align: right;
 
         h2{

@@ -5,7 +5,7 @@
 
     .scissor-image img{
         width: calc(100% / 2);
-        max-width: 700px;
+        min-width: 500px;
         position: absolute;
         top: -300px;
     }
@@ -17,7 +17,7 @@
         align-items: center;
 
         .technique-details{
-            width: 60%;
+            width: 55%;
             
             .find-btn{
                 @include button ($primaryColor, $whiteColor, $primaryColor);
@@ -27,24 +27,14 @@
                 }
             }
         }
+        .technique-image{
+            width: 40%;
+
+            img{
+               box-shadow: -12px 12px $designColor; 
+            }
+        }
     }   
 }
-// design for technique image
-.technique-image{
-    position: relative;
-    
-    img{
-        position: relative;
-      
-    }
-}
-.technique-image::before{
-            content: " ";
-            width: 100%;
-            height: 100%;
-            background-color: $designColor;
-            position: absolute;
-            top: 10px;
-            right:13px ;
-        }
+
         

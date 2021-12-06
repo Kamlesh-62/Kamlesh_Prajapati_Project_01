@@ -1,0 +1,39 @@
+@media (max-width: 1000px) {
+    // online market and location section 
+    .online-market-section .market-details{
+       padding: 3rem 0rem 0rem 6rem ;
+    }
+    .new-location-section .location-details{
+       padding: 3rem 3rem 3rem 0rem ;
+    }
+}
+
+@media (max-width: 820px ) {
+    // home-page
+    #home{
+        height: 60vh;
+        background-position: center;
+    }
+    .nav-bar .menu{
+        width: 80%;
+    }
+    .hero-page h1{
+        width: 90%;
+    }
+    // technique section
+    .technique-section .scissor-image img{
+        top: -250px;
+    }
+    // facilities section
+    .facilities .facilities-section{
+        flex-direction: column;
+
+        .facility{
+            width: 100%;
+        }
+    }
+    // online market and location section
+    .online-market-section{
+        // flex-direction: column
+    };
+}
