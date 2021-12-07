@@ -1,0 +1,85 @@
+main{
+    background-color: $primaryBackgroundColor;
+
+    .blog-collection-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+
+        .blog-collection{
+            position: relative;
+            top: -90px;
+            width: 60%;
+            background-color: $secondaryBackgroundColor;
+
+            .blog-main-img img{
+                width: 99%;
+                box-shadow: 15px 15px $designColor;
+            }
+            
+            .collection-details{
+                padding: 2rem 2rem 2rem 6rem;
+                box-shadow: 7px 7px $designColor;
+
+
+                h2,p{
+                color: $whiteColor;
+                }
+                .collection-release-date{
+                    color: $primaryBackgroundColor;
+                }
+            }
+        }
+        .blog-mission-post{
+            width: 30%;
+            background-color: $secondaryBackgroundColor;
+            height: fit-content;
+            img{
+                width: 100%;
+            padding-left: 2rem;
+            object-fit: cover;
+            }
+            .our-mission p,
+            .our-mission h2,
+            .recent-post h2,
+            .recent-post ul{
+                color: $whiteColor;
+                padding-left: 2rem;
+            }
+            .recent-post ul li{
+                font-family: $secondaryFontStyle;
+                line-height: 29px;
+                list-style-type: disc;
+                letter-spacing: 1.4px;
+                font-size: 18px;
+            }
+        }
+
+    }
+    .comment-section{
+        width: 60%;
+        padding-left: 5rem;
+
+
+        .comment-01,
+        .comment-02{
+            display: flex;
+            
+        }
+        .comment-01-details,
+         .comment-02-details{
+            margin-left: 1rem;
+
+            p:last-child {
+                color:$blackColor;
+            }
+
+        }
+        .comment-01-details{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+

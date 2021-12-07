@@ -17,12 +17,23 @@
     .nav-bar .menu{
         width: 80%;
     }
+    .skip-link{
+        display: none;
+    }
     .hero-page h1{
         width: 90%;
     }
     // technique section
     .technique-section .scissor-image img{
         top: -250px;
+    }
+    // main gallery section
+    .main-gallery-section{
+        padding: 3rem 0;
+        .main-gallery .main-img{
+            width: calc((100% / 2) - 1rem);
+            margin-top: 2rem;
+        }
     }
     // facilities section
     .facilities .facilities-section{
@@ -34,6 +45,120 @@
     }
     // online market and location section
     .online-market-section{
-        // flex-direction: column
-    };
+        flex-direction: column;
+
+        .market-img{
+            width: 100%;
+
+            img{
+                height: 80%;
+                object-fit: cover;
+                box-shadow: 0px 12px $designColor;
+                top:0;
+            }
+        }
+        .market-details{
+            width: 100%;
+            padding: 0rem 4rem 2rem 4rem;
+            text-align: center;
+        }
+    }
+    .new-location-section{
+        flex-direction: column-reverse;
+
+        .location-img{
+            width: 100%;
+
+            img{
+                height: 80%;
+                object-fit: cover;
+                box-shadow: 0px 12px $designColor;
+                top:0;
+            }
+        }
+        .location-details{
+            width: 100%;
+            padding: 0rem 4rem 2rem 4rem;
+            text-align: center;
+        }
+    }
+    // main banner section
+    #main-banner{
+        height: 50vh;
+    }
+}
+@media (max-width:670px) {
+    // header drop-down menu
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+
+        .menu{
+            width: 100%;
+        }
+    }
+    .nav-bar .menu ul {
+        display: none;
+        background: $primaryBackgroundColor;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        border-bottom: 3px solid $primaryColor;
+        border-top: 3px solid $primaryColor;
+
+        li{
+            padding: 1rem 1rem;
+        }
+    }
+    .dropDownMenu:checked + ul {
+               display: block;
+    }
+    .nav-bar .menu .hamburger-btn{
+        top: 1.2rem; 
+    }
+    // technique section
+
+    .technique-section {
+        padding: 3rem 0;
+
+        .scissor-image{
+            display: none;
+        }
+        .technique {
+            flex-direction: column-reverse;
+            margin-top: 0;
+            .technique-details{
+                width: 100%;
+                text-align: center;
+                margin-top: 0;
+            }
+            .technique-image{
+                width: 80%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 70%;
+                    box-shadow: 0 12px $designColor; 
+                }
+        }
+        }
+    }
+    // main gallery section
+    .main-gallery-section .main-gallery{
+        flex-direction: column;
+        .main-img{
+            width: 80%;
+            margin: 0 auto;
+            img{
+                padding: 1rem 0;
+            }
+        }
+    }
+    // facility section
+    .online-market-section .market-details,
+    .new-location-section .location-details{
+                padding: 0rem 2rem 2rem 2rem;
+
+    }
+
 }
