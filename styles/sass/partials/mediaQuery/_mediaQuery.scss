@@ -115,6 +115,7 @@
         z-index: 99;
         border-bottom: 3px solid $primaryColor;
         border-top: 3px solid $primaryColor;
+        animation: slide 0.3s ease-in;
 
         li{
             padding: 1rem 1rem;
@@ -125,6 +126,14 @@
     }
     .nav-bar .menu .hamburger-btn{
         top: 1.2rem; 
+    }
+    @keyframes slide {
+        0%{
+            transform: scaleY(0);
+        }
+        100%{
+            transform: scaleY(1);
+        }
     }
     // ============================
     // technique section

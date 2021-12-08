@@ -23,6 +23,10 @@
             .post-btn{
                 background-color: rgb(225, 242, 243);
                 color: $blackColor;
+                border: 2px solid $secondaryBackgroundColor;
+                &:hover{
+                    @include button($secondaryBackgroundColor,$designColor,$designColor)
+                }
             }
         }
     }
@@ -32,6 +36,10 @@
             padding-bottom: 1rem;
             display: flex;
             justify-content: space-between;
+            font-size: 2rem;
+            li:hover{
+                transform: scale(1.07);
+            }
         }
     }
 }

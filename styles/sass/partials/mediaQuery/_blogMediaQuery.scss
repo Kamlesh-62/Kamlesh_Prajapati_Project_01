@@ -1,9 +1,5 @@
 @media (max-width: 820px) {
     // ====================
-    // blog page (blog.html)
-    // ============================
-    
-    // ====================
     // main section
     // ====================
     #blog{
@@ -139,6 +135,13 @@
             .comment-01,
             .comment-02{
                 flex-direction: column;
+            }
+        }
+        .comment-form-section{
+            form {
+                input{
+                    width: 100%;
+                }
             }
         }
 }

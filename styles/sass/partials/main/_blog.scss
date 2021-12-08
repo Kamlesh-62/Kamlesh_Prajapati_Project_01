@@ -39,6 +39,7 @@ main{
             width: 30%;
             background-color: $secondaryBackgroundColor;
             height: fit-content;
+            padding-bottom: 2rem;
             img{
                 width: 100%;
                 padding-left: 2rem;
@@ -88,7 +89,7 @@ main{
     // comment form section here
     .comment-form-section{
         width: 60%;
-        padding-left: 5rem;
+        padding: 3rem 0 0 5rem;
             input{
                 border: none;
                 background-color: $primaryBackgroundColor;
@@ -111,6 +112,10 @@ main{
                 text-align: center;
                 width: 100%;
                 margin-bottom: 2rem;
+                border: 2px solid $primaryColor;
+                    &:hover{
+                    @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
+                    }
             }
     }
 }

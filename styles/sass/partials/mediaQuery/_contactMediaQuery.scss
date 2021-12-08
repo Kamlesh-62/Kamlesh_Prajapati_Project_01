@@ -1,3 +1,24 @@
+@media (max-width:1000px) {
+    .contact-main-section{
+        flex-direction: column;
+        .comment-form-section{
+            width: 100%;
+            padding: 0 5rem;
+            form{
+                box-shadow: 0 15px $designColor;
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        .contact-web-info{
+            .social-media{
+                width:50%;
+            }
+        }
+    }
+}
 @media (max-width: 670px) {
     .contact-nav-bar{
         flex-direction: column;
@@ -25,5 +46,15 @@
     }
     .contact-nav-bar .contact-menu .hamburger-btn{
         top: 1.2rem; 
+    }
+    .contact-main-section{
+        .comment-form-section{
+            padding: 1rem;
+        }
+        .contact-web-info{
+            .social-media{
+                width:70%;
+            }
+        }
     }
 }

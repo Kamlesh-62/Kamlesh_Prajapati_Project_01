@@ -386,11 +386,42 @@ h2 {
   right: 1.5rem;
   color: #0cadc0;
   z-index: 100;
+  -webkit-animation: bounce 0.9s infinite;
+          animation: bounce 0.9s infinite;
 }
 .nav-bar .menu .dropDownMenu {
   display: none;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 #blog {
   background: url("../textilee-assets/blog-header.jpg");
   height: 80vh;
@@ -610,6 +641,13 @@ h2 {
 .contact-main-section .comment-form-section form .post-btn {
   background-color: #e1f2f3;
   color: #000;
+  border: 2px solid #283f4d;
+}
+.contact-main-section .comment-form-section form .post-btn:hover {
+  background-color: #283f4d;
+  color: #0cadc0;
+  border: 2px solid #0cadc0;
+  letter-spacing: 2px;
 }
 .contact-main-section .contact-web-info {
   padding: 4rem 4rem 0rem 3rem;
@@ -622,6 +660,11 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 2rem;
+}
+.contact-main-section .contact-web-info .social-media ul li:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .technique-section {
@@ -890,6 +933,7 @@ main .blog-collection-section .blog-mission-post {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 2rem;
 }
 main .blog-collection-section .blog-mission-post img {
   width: 100%;
@@ -934,7 +978,7 @@ main .comment-section .comment-01-details {
 }
 main .comment-form-section {
   width: 60%;
-  padding-left: 5rem;
+  padding: 3rem 0 0 5rem;
 }
 main .comment-form-section input {
   border: none;
@@ -958,6 +1002,13 @@ main .comment-form-section button {
   text-align: center;
   width: 100%;
   margin-bottom: 2rem;
+  border: 2px solid #1a315c;
+}
+main .comment-form-section button:hover {
+  background-color: #ccedfb;
+  color: #1a315c;
+  border: 2px solid #1a315c;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -1094,6 +1145,8 @@ footer p a {
     z-index: 99;
     border-bottom: 3px solid #1a315c;
     border-top: 3px solid #1a315c;
+    -webkit-animation: slide 0.3s ease-in;
+            animation: slide 0.3s ease-in;
   }
   .nav-bar .menu ul li {
     padding: 1rem 1rem;
@@ -1107,6 +1160,27 @@ footer p a {
     top: 1.2rem;
   }
 
+  @-webkit-keyframes slide {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
   .technique-section {
     padding: 3rem 0;
   }
@@ -1295,5 +1369,74 @@ main .blog-collection-section .blog-mission-post .blog-mission-details .recent-p
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .comment-form-section form input {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .contact-main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-main-section .comment-form-section {
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .contact-main-section .comment-form-section form {
+    -webkit-box-shadow: 0 15px #0cadc0;
+            box-shadow: 0 15px #0cadc0;
+    width: 100%;
+  }
+  .contact-main-section .comment-form-section form input {
+    width: 100%;
+  }
+  .contact-main-section .contact-web-info .social-media {
+    width: 50%;
+  }
+}
+@media (max-width: 670px) {
+  .contact-nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact-nav-bar .contact-menu {
+    width: 100%;
+  }
+
+  .contact-nav-bar .contact-menu ul {
+    display: none;
+    background: #ccedfb;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 3px solid #1a315c;
+    border-top: 3px solid #1a315c;
+  }
+  .contact-nav-bar .contact-menu ul li {
+    padding: 1rem 1rem;
+  }
+
+  .dropDownMenu:checked + ul {
+    display: block;
+  }
+
+  .contact-nav-bar .contact-menu .hamburger-btn {
+    top: 1.2rem;
+  }
+
+  .contact-main-section .comment-form-section {
+    padding: 1rem;
+  }
+  .contact-main-section .contact-web-info .social-media {
+    width: 70%;
   }
 }
