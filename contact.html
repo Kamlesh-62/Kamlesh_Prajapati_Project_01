@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e06cf57877.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Contact -Textilee</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div>
+    <!-- header section start here -->
+    <header id="contact">
+        <!-- nav section start here -->
+        <nav class="contact-nav-bar">
+            <div class="website-logo">
                 <h3>Textilee</h3>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
+            <div class="contact-menu">
+                <input type="checkbox" id="dropDownMenu" class="dropDownMenu">
+                <ul class="contact-menu-list">
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="./blog.html">blog</a></li>
                     <li><a href="./contact.html">contact</a></li>
                 </ul>
-            </div>
-            <div>
-                <span><i class="fas fa-bars"></i></span>
+                <label for="dropDownMenu">
+                    <span class="hamburger-btn"><i class="fas fa-bars"></i></span>
+                </label>
             </div>
         </nav>
-        <div>
+        <!-- navbar section end here -->
+        <!-- blog page here  -->
+        <div class="contact-page wrapper">
             <h1>Get in touch</h1>
         </div>
     </header>
+    <!-- header end here -->
+    <!-- main section start here -->
+    <main>
+        <div class="contact-main-section">
+            <section class="comment-form-section">
+                <form action="#">
+                    <label for="customer-name" class="sr-only"> Customer Name</label>
+                    <input type="text" class="customer-name" placeholder="Name">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" placeholder="Email address">
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button class="post-btn btn">submit</button>
+                </form>
+            </section>
+            <section class="contact-web-info">
+                <div class="social-media">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="web-location">
+                    <p>info@email.com</p>
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen street West, Unit 10</p>
+                    <p>Toronto, Ontario, M5V2D5</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- main section end here -->
+    <!-- footer-section start here -->
+    <footer>
+        <p>Copyright &copy; 2019 <span><a href="https://junocollege.com" target="_blank">Juno College of
+                    Technology</a></span></p>
+    </footer>
+    <!-- footer-section end here here -->
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+// home page 
+#home{
+    background: url('../textilee-assets/header-home.jpg');
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;    
+
+    h3{
+        @include fontSize (24px, 0, $blackColor);
+        padding-left: 3.5rem;
+        
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: $secondaryFontStyle;
+            letter-spacing: 2px;
+            font-size: 18px;
+
+        li:hover{
+            transform: scale(1.07)
+        }
+        
+        a{
+            text-transform: uppercase;
+        }
+        li:first-child a{
+            position: relative;
+
+            &::before {
+                content: " ";
+                height: 2px;
+                position: absolute;
+                width: 90%;
+                background-color: $designColor;
+                left: 5%;
+                bottom: -5px;                
+            }
+        }
+    }
+         .hamburger-btn{
+                position: fixed;
+                top: -12rem;
+                font-size: 2rem;
+                right: 1.5rem;
+                color: $designColor;
+                z-index: 100;
+        }
+        .dropDownMenu{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.contact-main-section{
+    display: flex;
+    justify-content: space-between;
+    .comment-form-section{
+        position: relative;
+        top: -100px;
+        form{
+            background-color: $secondaryBackgroundColor;
+            padding: 4rem 2rem;
+            box-shadow: 15px 15px $designColor;
+            input{
+                background: $secondaryBackgroundColor;
+                &::placeholder{
+                    color: $whiteColor;
+                }
+            }
+            textarea{
+                background: $secondaryBackgroundColor;
+                &::placeholder{
+                    color: $whiteColor;
+                }
+            }
+            .post-btn{
+                background-color: rgb(225, 242, 243);
+                color: $blackColor;
+            }
+        }
+    }
+    .contact-web-info{
+        padding: 4rem 4rem 0rem 3rem;
+        .social-media ul{
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

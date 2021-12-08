@@ -1,3 +1,7 @@
+
+    // ====================
+    // blog main section=
+    // ====================
 main{
     background-color: $primaryBackgroundColor;
 
@@ -37,8 +41,8 @@ main{
             height: fit-content;
             img{
                 width: 100%;
-            padding-left: 2rem;
-            object-fit: cover;
+                padding-left: 2rem;
+                object-fit: cover;
             }
             .our-mission p,
             .our-mission h2,
@@ -57,6 +61,7 @@ main{
         }
 
     }
+    // comment section here
     .comment-section{
         width: 60%;
         padding-left: 5rem;
@@ -79,6 +84,34 @@ main{
         .comment-01-details{
             margin-bottom: 2rem;
         }
+    }
+    // comment form section here
+    .comment-form-section{
+        width: 60%;
+        padding-left: 5rem;
+            input{
+                border: none;
+                background-color: $primaryBackgroundColor;
+                border-bottom: 2px solid $designColor;
+                width: calc(99% / 2);
+                margin-bottom: 2rem;
+                padding-bottom: 0.5rem;
+            }
+            textarea{
+                display: block;
+                width: 100%;
+                background: $primaryBackgroundColor;
+                border: 2px solid $designColor;
+                margin-bottom: 2rem;
+                padding: 1rem;
+            }
+            button{
+                background: $primaryColor;
+                color: $whiteColor;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
     }
 }
 
