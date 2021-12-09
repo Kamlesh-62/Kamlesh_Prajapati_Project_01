@@ -33,7 +33,8 @@
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
 
-            &:hover{
+            &:hover,
+            &:focus{
                     @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
                 }
         }
@@ -73,7 +74,8 @@
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
 
-            &:hover{
+            &:hover,
+            &:focus{
                     @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
                 }
         }

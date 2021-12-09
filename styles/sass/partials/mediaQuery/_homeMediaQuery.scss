@@ -1,10 +1,20 @@
 @media (max-width: 1000px) {
+    // technique section scissor image section
+    .technique-section .scissor-image img{
+        top: -400px;
+        min-width: 500px;
+    }
     // online market and location section 
-    .online-market-section .market-details{
-       padding: 3rem 0rem 0rem 6rem ;
+    .online-market-section{
+        .market-details{
+       padding: 3rem 1rem 0rem 6rem ;
+    }
+        .market-img img{
+            top: 50px;
+        }
     }
     .new-location-section .location-details{
-       padding: 3rem 3rem 3rem 0rem ;
+       padding: 3rem 3rem 3rem 1rem ;
     }
 }
 // ============================
@@ -19,16 +29,13 @@
     .nav-bar .menu{
         width: 80%;
     }
-    .skip-link{
-        display: none;
-    }
     .hero-page h1{
         width: 90%;
     }
     // ===========================
     // technique section
     .technique-section .scissor-image img{
-        top: -250px;
+        top: -200px;
     }
     // ==========================
     // main gallery section
@@ -157,7 +164,7 @@
                 img{
                     width: 100%;
                     object-fit: cover;
-                    height: 70%;
+                    height: 80%;
                     box-shadow: 0 12px $designColor; 
                 }
         }

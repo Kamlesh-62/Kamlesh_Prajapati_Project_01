@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e06cf57877.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Contact -Textilee</title>
+    <title>Contact-Textilee</title>
 </head>
-
 <body>
     <!-- header section start here -->
     <header id="contact">
         <!-- nav section start here -->
-        <nav class="contact-nav-bar">
+        <nav class="contact-nav-bar wrapper">
             <div class="website-logo">
-                <h3>Textilee</h3>
+                <h3><a href="./index.html">Textilee</a></h3>
             </div>
+            <!-- skip to the main menu -->
+            <div>
+                <a href="#main" class="skip-link">Skip to main content.</a></li>
+            </div>
+            <!-- skip to the main menu -->
             <div class="contact-menu">
                 <input type="checkbox" id="dropDownMenu" class="dropDownMenu">
                 <ul class="contact-menu-list">
@@ -42,7 +45,8 @@
     </header>
     <!-- header end here -->
     <!-- main section start here -->
-    <main>
+    <main id="#main">
+        <!-- contact form section start here -->
         <div class="contact-main-section">
             <section class="comment-form-section">
                 <form action="#">
@@ -50,19 +54,24 @@
                     <input type="text" class="customer-name" placeholder="Name">
                     <label for="email" class="sr-only">Email address</label>
                     <input type="email" placeholder="Email address">
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <label for="comment-textarea" class="sr-only">comment here</label>
+                    <textarea name="comment" class="comment-area" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                     <button class="post-btn btn">submit</button>
                 </form>
             </section>
+            <!-- conatact web-form section -->
+            <!-- website social media and location section -->
             <section class="contact-web-info">
+                <!-- social media  -->
                 <div class="social-media">
                     <ul>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
+                <!-- location section -->
                 <div class="web-location">
                     <p>info@email.com</p>
                     <p>123 - 456 - 7890</p>
@@ -75,10 +84,8 @@
     <!-- main section end here -->
     <!-- footer-section start here -->
     <footer>
-        <p>Copyright &copy; 2019 <span><a href="https://junocollege.com" target="_blank">Juno College of
-                    Technology</a></span></p>
+        <p>Copyright &copy; 2019 <span><a href="https://junocollege.com" target="_blank">Juno College of Technology</a></span></p>
     </footer>
     <!-- footer-section end here here -->
 </body>
-
 </html>

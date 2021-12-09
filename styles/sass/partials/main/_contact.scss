@@ -10,12 +10,14 @@
             box-shadow: 15px 15px $designColor;
             input{
                 background: $secondaryBackgroundColor;
+                color: $whiteColor;
                 &::placeholder{
                     color: $whiteColor;
                 }
             }
             textarea{
                 background: $secondaryBackgroundColor;
+                color: $whiteColor;
                 &::placeholder{
                     color: $whiteColor;
                 }
@@ -24,7 +26,8 @@
                 background-color: rgb(225, 242, 243);
                 color: $blackColor;
                 border: 2px solid $secondaryBackgroundColor;
-                &:hover{
+                &:hover,
+                &:focus{
                     @include button($secondaryBackgroundColor,$designColor,$designColor)
                 }
             }
@@ -37,7 +40,8 @@
             display: flex;
             justify-content: space-between;
             font-size: 2rem;
-            li:hover{
+            li:hover,
+            li:focus{
                 transform: scale(1.07);
             }
         }

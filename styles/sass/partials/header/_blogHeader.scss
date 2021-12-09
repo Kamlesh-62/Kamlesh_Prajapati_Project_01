@@ -4,7 +4,7 @@
 
 #blog{
     background: url('../textilee-assets/blog-header.jpg');
-        height: 80vh;
+        height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -63,6 +63,8 @@
                 right: 1.5rem;
                 color: $designColor;
                 z-index: 100;
+                animation: bounce 0.9s infinite;
+
         }
         .dropDownMenu{
             display: none;

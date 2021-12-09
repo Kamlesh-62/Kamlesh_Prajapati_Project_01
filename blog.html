@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +11,19 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Blog -Textilee</title>
 </head>
-
 <body>
     <!-- header section start here -->
     <header id="blog">
         <!-- nav section start here -->
-        <nav class="blog-nav-bar">
+        <nav class="blog-nav-bar wrapper">
             <div class="blog-website-logo">
-                <h3>Textilee</h3>
+                <h3><a href="./index.html">Textilee</a></h3>
             </div>
+            <!-- skip to the main menu -->
+            <div>
+                <a href="#main" class="skip-link">Skip to main content.</a></li>
+            </div>
+            <!-- skip to the main menu -->
             <!-- header menu here -->
             <div class="blog-menu">
                 <input type="checkbox" id="dropDownMenu" class="dropDownMenu">
@@ -45,35 +48,27 @@
     <!-- blog main section start here -->
     <main>
         <section>
-            <div class="blog-collection-section">
+            <div class="blog-collection-section" >
                 <div class="blog-collection">
                     <div class="blog-main-img">
                         <img src="./textilee-assets/blog-post-image.jpg" id="main-image"
                             alt="Types of fabric for clothes">
                     </div>
                     <div>
+                        <!-- collection deatails section -->
                         <div class="collection-details">
                             <h2>Our new collection</h2>
                             <p class="collection-release-date">Monday, October 5th, 2019 by sarom</p>
-                            <p class="collection-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Adipisci,
-                                exercitationem voluptas ad maxime non odio repellat est fuga eaque perspiciatis.
+                            <p class="collection-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,exercitationem voluptas ad maxime non odio repellat est fuga eaque perspiciatis.
                                 <br>
                                 <br>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsam, aliquam
-                                facilis,
-                                ullam dignissimos quis modi, soluta animi cupiditate quaerat quos itaque accusamus in!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsam, aliquamfacilis, ullam dignissimos quis modi, soluta animi cupiditate quaerat quos itaque accusamus in!
                                 <br>
                                 <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur esse ducimus
-                                molestiae
-                                nihil mollitia corrupti, facilis est quam quos tempora. Quis blanditiis error ullam
-                                nihil mollitia corrupti, facilis est quam quos tempora. Quis blanditiis error ullam
-                                maiores
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur esse ducimus molestiae nihil mollitia corrupti, facilis est quam quos tempora. Quis blanditiis error ullam nihil mollitia corrupti, facilis est quam quos tempora. Quis blanditiis error ullam maiores
                                 <br>
                                 <br>
-                                pariatur explicabo fugiat accusantium et?
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nulla.
+                                pariatur explicabo fugiat accusantium et? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nulla.
                             </p>
                         </div>
                     </div>
@@ -83,11 +78,11 @@
                     <div class="blog-mission-img">
                         <img src="./textilee-assets/sidebar-image.jpg" alt="Stack of raw material for clothes">
                     </div>
+                    <!-- blog mission details section -->
                     <div class="blog-mission-details">
                         <div class="our-mission">
                             <h2>Our mission</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis culpa rem
-                                alias.
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis culpa rem alias.
                             </p>
                         </div>
                         <div class="recent-post">
@@ -105,7 +100,7 @@
             </div>
         </section>
         <!-- comment setion start here -->
-        <section class="comment-section">
+        <section class="comment-section" id="main">
             <h2>Comments:</h2>
             <div class="comment-01">
                 <div class="comment-01-img">
@@ -131,7 +126,7 @@
         </section>
         <!-- customer comment section start here -->
         <!-- comment form section -->
-        <section class="comment-form-section">
+        <section class="comment-form-section" >
             <form action="#">
                 <label for="customer-name" class="sr-only"> Customer Name</label>
                 <input type="text" class="customer-name" placeholder="Name">

@@ -8,17 +8,17 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-// this code for skip the main content for accessibility
+// this code for skip-link for accessibility
 .skip-link {
   position: absolute;
-  left: 9000px;
-  top: 5px;
+  left: -200px;
+  top: 1.5rem;
   z-index: 999;
-  background: $whiteColor;
+  height: 30px;
+  background: $designColor;
   color: $blackColor;
-  // visibility: hidden;
 }
 
 .skip-link:focus {
-  visibility: visible;
-}
+  left:200px;
+  }
