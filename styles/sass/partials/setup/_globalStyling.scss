@@ -35,7 +35,7 @@ p{
     font-family: $secondaryFontStyle;
 }
 h1{
-    @include fontSize (clamp(40px, 7vw, 54px), 64px, $primaryColor);
+    @include fontSize (clamp(40px, 7vw, 58px), 64px, $primaryColor);
     width: 60%;
 }
 h2{

@@ -6,12 +6,12 @@
         text-align: center;
 
         .find-btn{
-                @include button ($primaryColor, $whiteColor, $primaryColor);
+            @include button ($primaryColor, $whiteColor, $primaryColor);
 
-                &:hover,
-                &:focus{
-                    @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
-                }
+            &:hover,
+            &:focus{
+                @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
             }
+        }
     }
 }

@@ -35,11 +35,10 @@
 
             &:hover,
             &:focus{
-                    @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
-                }
+                @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
+            }
         }
-    }
-    
+    } 
 }
 .new-location-section{
     display: flex;
@@ -76,9 +75,8 @@
 
             &:hover,
             &:focus{
-                    @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
-                }
+                @include button($secondaryBackgroundColor,$primaryBackgroundColor,$primaryBackgroundColor)
+            }
         }
-    }
-    
+    } 
 }

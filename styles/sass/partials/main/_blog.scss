@@ -90,34 +90,34 @@ main{
     .comment-form-section{
         width: 60%;
         padding: 3rem 0 0 5rem;
-            input{
-                border: none;
-                background-color: $primaryBackgroundColor;
-                border-bottom: 2px solid $designColor;
-                width: calc(99% / 2);
-                margin-bottom: 2rem;
-                padding-bottom: 0.5rem;
+        input{
+            border: none;
+            background-color: $primaryBackgroundColor;
+            border-bottom: 2px solid $designColor;
+            width: calc(99% / 2);
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            background: $primaryBackgroundColor;
+            border: 2px solid $designColor;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        button{
+            background: $primaryColor;
+            color: $whiteColor;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2rem;
+            border: 2px solid $primaryColor;
+                &:hover,
+                &:focus{
+                @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
             }
-            textarea{
-                display: block;
-                width: 100%;
-                background: $primaryBackgroundColor;
-                border: 2px solid $designColor;
-                margin-bottom: 2rem;
-                padding: 1rem;
-            }
-            button{
-                background: $primaryColor;
-                color: $whiteColor;
-                text-align: center;
-                width: 100%;
-                margin-bottom: 2rem;
-                border: 2px solid $primaryColor;
-                    &:hover,
-                    &:focus{
-                    @include button($primaryBackgroundColor,$primaryColor,$primaryColor)
-                    }
-            }
+        }
     }
 }
 

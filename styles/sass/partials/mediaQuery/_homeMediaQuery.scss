@@ -99,8 +99,7 @@
     // main banner section
     #main-banner{
         height: 50vh;
-    }
-    
+    } 
 }
 // ========================
 // media query for 670px
@@ -125,7 +124,7 @@
         animation: slide 0.3s ease-in;
 
         li{
-            padding: 1rem 1rem;
+            padding: 1rem 2rem;
         }
     }
     .dropDownMenu:checked + ul {
@@ -167,7 +166,7 @@
                     height: 80%;
                     box-shadow: 0 12px $designColor; 
                 }
-        }
+            }
         }
     }
     // =======================

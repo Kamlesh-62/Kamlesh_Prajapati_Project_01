@@ -289,7 +289,7 @@ p {
 h1 {
   letter-spacing: 2px;
   font-weight: normal;
-  font-size: clamp(40px, 7vw, 54px);
+  font-size: clamp(40px, 7vw, 58px);
   line-height: 64px;
   color: #1a315c;
   width: 60%;
@@ -368,10 +368,11 @@ h2 {
 .nav-bar .menu ul a {
   text-transform: uppercase;
 }
-.nav-bar .menu ul li:first-child a {
+
+.menu-list li:first-child a {
   position: relative;
 }
-.nav-bar .menu ul li:first-child a::before {
+.menu-list li:first-child a::before {
   content: " ";
   height: 2px;
   position: absolute;
@@ -380,7 +381,8 @@ h2 {
   left: 5%;
   bottom: -5px;
 }
-.nav-bar .menu .hamburger-btn {
+
+.hamburger-btn {
   position: fixed;
   top: -12rem;
   font-size: 2rem;
@@ -390,7 +392,8 @@ h2 {
   -webkit-animation: bounce 0.9s infinite;
           animation: bounce 0.9s infinite;
 }
-.nav-bar .menu .dropDownMenu {
+
+.dropDownMenu {
   display: none;
 }
 
@@ -431,59 +434,10 @@ h2 {
   background-size: cover;
 }
 
-.blog-nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-}
-.blog-nav-bar h3 {
-  letter-spacing: 2px;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 0;
-  color: #000;
-  padding-left: 3.5rem;
-}
-.blog-nav-bar .blog-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 60%;
-}
-.blog-nav-bar .blog-menu ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-.blog-nav-bar .blog-menu ul li:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-.blog-nav-bar .blog-menu ul a {
-  text-transform: uppercase;
-}
-.blog-nav-bar .blog-menu ul li:nth-of-type(3) a {
+.blog-menu-list li:nth-of-type(3) a {
   position: relative;
 }
-.blog-nav-bar .blog-menu ul li:nth-of-type(3) a::before {
+.blog-menu-list li:nth-of-type(3) a::before {
   content: " ";
   height: 2px;
   position: absolute;
@@ -491,19 +445,6 @@ h2 {
   background-color: #0cadc0;
   left: 5%;
   bottom: -5px;
-}
-.blog-nav-bar .blog-menu .hamburger-btn {
-  position: fixed;
-  top: -12rem;
-  font-size: 2rem;
-  right: 1.5rem;
-  color: #0cadc0;
-  z-index: 100;
-  -webkit-animation: bounce 0.9s infinite;
-          animation: bounce 0.9s infinite;
-}
-.blog-nav-bar .blog-menu .dropDownMenu {
-  display: none;
 }
 
 #contact {
@@ -514,59 +455,10 @@ h2 {
   background-size: cover;
 }
 
-.contact-nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-}
-.contact-nav-bar h3 {
-  letter-spacing: 2px;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 0;
-  color: #000;
-  padding-left: 3.5rem;
-}
-.contact-nav-bar .contact-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 60%;
-}
-.contact-nav-bar .contact-menu ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-.contact-nav-bar .contact-menu ul li:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-.contact-nav-bar .contact-menu ul a {
-  text-transform: uppercase;
-}
-.contact-nav-bar .contact-menu ul li:nth-of-type(4) a {
+.contact-menu-list li:nth-of-type(4) a {
   position: relative;
 }
-.contact-nav-bar .contact-menu ul li:nth-of-type(4) a::before {
+.contact-menu-list li:nth-of-type(4) a::before {
   content: " ";
   height: 2px;
   position: absolute;
@@ -574,19 +466,6 @@ h2 {
   background-color: #0cadc0;
   left: 5%;
   bottom: -5px;
-}
-.contact-nav-bar .contact-menu .hamburger-btn {
-  position: fixed;
-  top: -12rem;
-  font-size: 2rem;
-  right: 1.5rem;
-  color: #0cadc0;
-  z-index: 100;
-  -webkit-animation: bounce 0.9s infinite;
-          animation: bounce 0.9s infinite;
-}
-.contact-nav-bar .contact-menu .dropDownMenu {
-  display: none;
 }
 
 .contact-main-section {
@@ -683,7 +562,7 @@ h2 {
 .technique-section .scissor-image img {
   width: calc(100% / 2);
   position: absolute;
-  top: -450px;
+  top: -350px;
   max-width: 800px;
 }
 .technique-section .technique {
@@ -1159,7 +1038,7 @@ footer p a {
             animation: slide 0.3s ease-in;
   }
   .nav-bar .menu ul li {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 
   .dropDownMenu:checked + ul {

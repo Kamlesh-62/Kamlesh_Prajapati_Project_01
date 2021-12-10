@@ -7,64 +7,17 @@
         background-size: cover;
 }
 
-.contact-nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 0;    
+// contact-page  Contact menu underline
+.contact-menu-list li:nth-of-type(4) a{
+    position: relative;
 
-    h3{
-        @include fontSize (24px, 0, $blackColor);
-        padding-left: 3.5rem;
-        
-    }
-    .contact-menu {
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-
-        ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            font-family: $secondaryFontStyle;
-            letter-spacing: 2px;
-            font-size: 18px;
-
-        li:hover{
-            transform: scale(1.07)
-        }
-        
-        a{
-            text-transform: uppercase;
-        }
-        li:nth-of-type(4) a{
-            position: relative;
-
-            &::before {
-                content: " ";
-                height: 2px;
-                position: absolute;
-                width: 90%;
-                background-color: $designColor;
-                left: 5%;
-                bottom: -5px;                
-            }
-        }
-    }
-         .hamburger-btn{
-                position: fixed;
-                top: -12rem;
-                font-size: 2rem;
-                right: 1.5rem;
-                color: $designColor;
-                z-index: 100;
-                animation: bounce 0.9s infinite;
-
-        }
-        .dropDownMenu{
-            display: none;
-        }
+    &::before {
+        content: " ";
+        height: 2px;
+        position: absolute;
+        width: 90%;
+        background-color: $designColor;
+        left: 5%;
+        bottom: -5px;                
     }
 }
