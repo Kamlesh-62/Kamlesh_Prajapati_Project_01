@@ -188,4 +188,11 @@
 
     }
 }
-        
+@media (max-height: 750px) {
+    #home{
+        height: 100vh;
+    }
+    .technique-section .scissor-image img{
+       display: none;
+    }
+}  
