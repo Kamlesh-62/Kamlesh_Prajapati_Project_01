@@ -683,6 +683,7 @@ h2 {
 }
 .online-market-section .market-img img {
   width: 100%;
+  min-width: 430px;
   height: 100%;
   position: relative;
   top: -40px;
@@ -722,6 +723,7 @@ h2 {
 }
 .new-location-section .location-img img {
   width: 100%;
+  min-width: 430px;
   height: 100%;
   position: relative;
   bottom: -50px;
@@ -796,9 +798,13 @@ main .blog-collection-section .blog-collection {
 }
 main .blog-collection-section .blog-collection .blog-main-img img {
   width: 99%;
+  -webkit-box-shadow: 15px 15px #0cadc0;
+          box-shadow: 15px 15px #0cadc0;
 }
 main .blog-collection-section .blog-collection .collection-details {
   padding: 2rem 2rem 2rem 6rem;
+  -webkit-box-shadow: 7px 7px #0cadc0;
+          box-shadow: 7px 7px #0cadc0;
 }
 main .blog-collection-section .blog-collection .collection-details h2, main .blog-collection-section .blog-collection .collection-details p {
   color: #fff;

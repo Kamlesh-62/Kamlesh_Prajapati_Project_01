@@ -16,25 +16,15 @@ main{
             top: -90px;
             width: 60%;
             background-color: $secondaryBackgroundColor;
-            // z-index: 1;
-
-            // &::before{
-            //     content: '';
-            //     background-color: $designColor;
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     z-index: 1000;
-            // }
 
             .blog-main-img img{
                 width: 99%;
-                // box-shadow: 15px 15px $designColor;
+                box-shadow: 15px 15px $designColor;
             }
             
             .collection-details{
                 padding: 2rem 2rem 2rem 6rem;
-                // box-shadow: 7px 7px $designColor;
+                box-shadow: 7px 7px $designColor;
 
 
                 h2,p{
