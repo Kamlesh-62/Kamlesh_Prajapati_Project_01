@@ -45,30 +45,29 @@
 // Home page Home menu underline
 .menu-list li:first-child a{
     position: relative;
-
+    
     &::before {
         content: " ";
-        height: 2px;
+        height: 3px;
         position: absolute;
         width: 90%;
         background-color: $designColor;
         left: 5%;
-        bottom: -5px;                
+        bottom: -5px;   
+        animation: slidingLine 1s ease-in-out;             
     }
 }
 
 // dropdown menu for Small screen
 .hamburger-btn{
         position: fixed;
-        top: -12rem;
         font-size: 2rem;
         right: 1.5rem;
         color: $designColor;
         z-index: 100;
         animation: bounce 0.9s infinite;
-}
-.dropDownMenu{
-    display: none;
+        cursor: pointer;
+        display: none;
 }
 // animation
 @keyframes bounce {
@@ -80,5 +79,16 @@
     }
     100%{
         transform: scale(1);
+    }
+}
+@keyframes slidingLine {
+    0%{
+        transform: scaleX(0);
+    }
+    50%{
+        transform: scaleX(1.3);
+    }
+    100%{
+        transform: scaleX(1);
     }
 }

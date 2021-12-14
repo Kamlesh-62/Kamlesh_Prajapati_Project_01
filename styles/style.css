@@ -374,26 +374,25 @@ h2 {
 }
 .menu-list li:first-child a::before {
   content: " ";
-  height: 2px;
+  height: 3px;
   position: absolute;
   width: 90%;
   background-color: #0cadc0;
   left: 5%;
   bottom: -5px;
+  -webkit-animation: slidingLine 1s ease-in-out;
+          animation: slidingLine 1s ease-in-out;
 }
 
 .hamburger-btn {
   position: fixed;
-  top: -12rem;
   font-size: 2rem;
   right: 1.5rem;
   color: #0cadc0;
   z-index: 100;
   -webkit-animation: bounce 0.9s infinite;
           animation: bounce 0.9s infinite;
-}
-
-.dropDownMenu {
+  cursor: pointer;
   display: none;
 }
 
@@ -426,6 +425,34 @@ h2 {
             transform: scale(1);
   }
 }
+@-webkit-keyframes slidingLine {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(1.3);
+            transform: scaleX(1.3);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes slidingLine {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(1.3);
+            transform: scaleX(1.3);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
 #blog {
   background: url("../textilee-assets/blog-header.jpg");
   height: 70vh;
@@ -439,12 +466,14 @@ h2 {
 }
 .blog-menu-list li:nth-of-type(3) a::before {
   content: " ";
-  height: 2px;
+  height: 3px;
   position: absolute;
   width: 90%;
   background-color: #0cadc0;
   left: 5%;
   bottom: -5px;
+  -webkit-animation: slidingLine 1s ease-in-out;
+          animation: slidingLine 1s ease-in-out;
 }
 
 #contact {
@@ -460,12 +489,14 @@ h2 {
 }
 .contact-menu-list li:nth-of-type(4) a::before {
   content: " ";
-  height: 2px;
+  height: 3px;
   position: absolute;
   width: 90%;
   background-color: #0cadc0;
   left: 5%;
   bottom: -5px;
+  -webkit-animation: slidingLine 1s ease-in-out;
+          animation: slidingLine 1s ease-in-out;
 }
 
 .contact-main-section {
@@ -1026,48 +1057,52 @@ footer p a {
     width: 100%;
   }
 
-  .nav-bar .menu ul {
-    display: none;
-    background: #ccedfb;
+  .menu-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #122b3aea;
     width: 100%;
     position: fixed;
     z-index: 99;
-    border-bottom: 3px solid #1a315c;
-    border-top: 3px solid #1a315c;
     -webkit-animation: slide 0.3s ease-in;
             animation: slide 0.3s ease-in;
   }
-  .nav-bar .menu ul li {
+  .menu-item li {
     padding: 1rem 2rem;
   }
-
-  .dropDownMenu:checked + ul {
-    display: block;
+  .menu-item li a {
+    color: #fff;
   }
 
-  .nav-bar .menu .hamburger-btn {
-    top: 1.2rem;
+  .nav-bar .menu .active {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
   }
 
   @-webkit-keyframes slide {
     0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
+      -webkit-transform: scale(0, 1);
+              transform: scale(0, 1);
     }
     100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
     }
   }
 
   @keyframes slide {
     0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
+      -webkit-transform: scale(0, 1);
+              transform: scale(0, 1);
     }
     100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
     }
   }
   .technique-section {
@@ -1209,40 +1244,6 @@ main .blog-collection-section .blog-mission-post .blog-mission-details .recent-p
   }
 }
 @media (max-width: 670px) {
-  .blog-nav-bar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .blog-nav-bar .blog-menu {
-    width: 100%;
-  }
-
-  .blog-nav-bar .blog-menu ul {
-    display: none;
-    background: #ccedfb;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    border-bottom: 3px solid #1a315c;
-    border-top: 3px solid #1a315c;
-  }
-  .blog-nav-bar .blog-menu ul li {
-    padding: 1rem 1rem;
-  }
-
-  .dropDownMenu:checked + ul {
-    display: block;
-  }
-
-  .blog-nav-bar .blog-menu .hamburger-btn {
-    top: 1.2rem;
-  }
-
   main .blog-collection-section .blog-mission-post {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1306,40 +1307,6 @@ main .blog-collection-section .blog-mission-post .blog-mission-details .recent-p
   }
 }
 @media (max-width: 670px) {
-  .contact-nav-bar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contact-nav-bar .contact-menu {
-    width: 100%;
-  }
-
-  .contact-nav-bar .contact-menu ul {
-    display: none;
-    background: #ccedfb;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    border-bottom: 3px solid #1a315c;
-    border-top: 3px solid #1a315c;
-  }
-  .contact-nav-bar .contact-menu ul li {
-    padding: 1rem 1rem;
-  }
-
-  .dropDownMenu:checked + ul {
-    display: block;
-  }
-
-  .contact-nav-bar .contact-menu .hamburger-btn {
-    top: 1.2rem;
-  }
-
   .contact-main-section .comment-form-section {
     padding: 1rem;
   }

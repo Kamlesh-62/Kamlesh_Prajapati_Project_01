@@ -113,34 +113,35 @@
             width: 100%;
         }
     }
-    .nav-bar .menu ul {
-        display: none;
-        background: $primaryBackgroundColor;
+    .menu-item{
+        flex-direction: column;
+        background: #122b3aea;
         width: 100%;
         position: fixed;
         z-index: 99;
-        border-bottom: 3px solid $primaryColor;
-        border-top: 3px solid $primaryColor;
         animation: slide 0.3s ease-in;
-
         li{
             padding: 1rem 2rem;
+            a{
+                color: $whiteColor;
+            }
         }
     }
-    .dropDownMenu:checked + ul {
-               display: block;
+    .nav-bar .menu .active{
+        display: none;
     }
-    .nav-bar .menu .hamburger-btn{
-        top: 1.2rem; 
+    .hamburger-btn{
+        display: block;
     }
     @keyframes slide {
         0%{
-            transform: scaleY(0);
+            transform: scale(0 , 1);
         }
         100%{
-            transform: scaleY(1);
+            transform: scale(1 , 1);
         }
     }
+    
     // ============================
     // technique section
 
@@ -196,3 +197,4 @@
        display: none;
     }
 }  
+

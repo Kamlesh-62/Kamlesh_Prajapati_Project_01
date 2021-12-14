@@ -79,35 +79,6 @@
     }
 }
 @media (max-width:670px) {
-    // blig header section
-    .blog-nav-bar{
-        flex-direction: column;
-        align-items: flex-start;
-        
-        .blog-menu{
-            width: 100%;
-        }
-    }
-    .blog-nav-bar .blog-menu ul {
-        display: none;
-        background: $primaryBackgroundColor;
-        width: 100%;
-        position: fixed;
-        z-index: 99;
-        border-bottom: 3px solid $primaryColor;
-        border-top: 3px solid $primaryColor;
-        
-        li{
-            padding: 1rem 1rem;
-        }
-    }
-    .dropDownMenu:checked + ul {
-        display: block;
-    }
-    .blog-nav-bar .blog-menu .hamburger-btn{
-        top: 1.2rem; 
-    }
-
     // ===============
         // blog-main
         // ==================

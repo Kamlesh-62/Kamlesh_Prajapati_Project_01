@@ -13,11 +13,13 @@
 
     &::before {
         content: " ";
-        height: 2px;
+        height: 3px;
         position: absolute;
         width: 90%;
         background-color: $designColor;
         left: 5%;
-        bottom: -5px;                
+        bottom: -5px;       
+        animation: slidingLine 1s ease-in-out;             
+         
     }
 }
