@@ -3,9 +3,9 @@
 // hamgurger button
 const menuApp = {};
 
-menuApp.menuDiv = document.querySelector('.menu');
 menuApp.listOfMenu = document.querySelector('.menu-item');
 
+menuApp.menuDiv = document.querySelector('.menu');
 menuApp.hamburgerMenu = document.createElement('div');
 menuApp.hamburgerMenu.innerHTML = `<span class="hamburger-btn"><i class="fas fa-bars"></i></span>`;
 menuApp.menuDiv.appendChild(menuApp.hamburgerMenu);
@@ -46,5 +46,18 @@ window.addEventListener('scroll', ScrollToTop.scrollUp);
 
 
 // get in touch: click on get in Touch button pop up comment box.
+const commentApp = {};
 
-const getInTouchBox = document.querySelector('.getInTouch')
+commentApp.facilitySection = document.querySelector('.facility-comment-form')
+commentApp.getInTouchHeader= document.querySelector('.get-in-touch')
+commentApp.closeButton = document.querySelector('.close-btn');
+ 
+// add event listner to show comment form
+commentApp.getInTouchHeader.addEventListener("click",function(){
+    commentApp.facilitySection.classList.remove('show');
+})
+// add event listner to close comment form
+commentApp.closeButton.addEventListener("click", function () {
+    commentApp.facilitySection.classList.add('show');
+})
+                

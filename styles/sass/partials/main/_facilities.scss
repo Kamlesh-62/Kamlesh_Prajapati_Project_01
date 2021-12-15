@@ -11,6 +11,8 @@
 
             h2{
                 font-size: 40px;
+                cursor: pointer;
+                
             }
             p{
                 margin-left: 4rem;
@@ -42,4 +44,61 @@
 .getInTouch h2::before{
     font-family: "Font Awesome 5 Free";
     content: "\f095";
+}
+
+.getInTouch h2{
+}
+
+// comment display for home page
+.facility-comment-form{
+    width: 50%;
+    position: fixed;
+    bottom: 20%;
+    left: 25%;
+    z-index: 777;
+    .comment-display{
+        background-color: $whiteColor;
+        width: 100%;
+        padding: 2rem 2rem;
+        position: relative;
+        span{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 2rem;
+            color: red;
+            cursor: pointer;
+        }
+        input{
+            border: none;
+            background-color: $whiteColor;
+            border-bottom: 2px solid $primaryColor;
+            width: calc(99% / 2);
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            background: $whiteColor;
+            border: 2px solid $primaryColor;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        button{
+            background: $primaryColor;
+            color: $whiteColor;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2rem;
+            border: 2px solid $primaryColor;
+                &:hover,
+                &:focus{
+                @include button($whiteColor,$primaryColor,$primaryColor);
+            }
+        }
+    }     
+}
+.show{
+    display: none;
 }

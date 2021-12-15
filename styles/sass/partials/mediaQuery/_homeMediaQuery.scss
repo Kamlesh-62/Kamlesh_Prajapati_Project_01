@@ -188,6 +188,17 @@
                 padding: 0rem 2rem 2rem 2rem;
 
     }
+    .facility-comment-form{
+        width: 100%;   
+        left: 0;
+        .comment-display{
+            background-color: $whiteColor;
+            padding: 2rem 2rem;
+            input{
+                width: 100%;
+            }
+        }
+    }
 }
 @media (max-height: 750px) {
     #home{

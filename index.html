@@ -93,9 +93,21 @@
                     <h2><a href="./blog.html">Blog</a></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
                 </div>
-                <div class="facility getInTouch">
-                    <h2><a href="./contact.html">Get in Touch</a></h2>
+                <div class="facility getInTouch commentBox">
+                    <h2 class="get-in-touch">Get in Touch</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti amet minus dolorem reprehenderit magni, quaerat maxime minima numquam deserunt voluptatum fugit iste rerum in.</p>
+                </div>
+                <div class='facility-comment-form show'>
+                    <form action="#" class="comment-display">
+                        <label for="customer-name" class="sr-only"> Customer Name</label>
+                        <input type="text" class="customer-name" placeholder="Name">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" placeholder="Email address">
+                        <label for="comment-textarea" class="sr-only">comment here</label>
+                        <textarea name="comment" class="comment-area" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button class="post-btn btn">submit</button>
+                        <span class="close-btn"><i class="fas fa-times"></i></span>
+                    </form>
                 </div>
             </div>
         </section>

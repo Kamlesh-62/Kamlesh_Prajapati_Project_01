@@ -386,7 +386,7 @@ h2 {
 
 .top-btn i {
   position: fixed;
-  right: 5px;
+  right: 10px;
   bottom: 50px;
   z-index: 9999;
   font-size: 2rem;
@@ -700,6 +700,7 @@ h2 {
 }
 .facilities .facilities-section .facility h2 {
   font-size: 40px;
+  cursor: pointer;
 }
 .facilities .facilities-section .facility p {
   margin-left: 4rem;
@@ -731,6 +732,62 @@ h2 {
 .getInTouch h2::before {
   font-family: "Font Awesome 5 Free";
   content: "";
+}
+
+.facility-comment-form {
+  width: 50%;
+  position: fixed;
+  bottom: 20%;
+  left: 25%;
+  z-index: 777;
+}
+.facility-comment-form .comment-display {
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem 2rem;
+  position: relative;
+}
+.facility-comment-form .comment-display span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}
+.facility-comment-form .comment-display input {
+  border: none;
+  background-color: #fff;
+  border-bottom: 2px solid #1a315c;
+  width: calc(99% / 2);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+.facility-comment-form .comment-display textarea {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #1a315c;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.facility-comment-form .comment-display button {
+  background: #1a315c;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid #1a315c;
+}
+.facility-comment-form .comment-display button:hover, .facility-comment-form .comment-display button:focus {
+  background-color: #fff;
+  color: #1a315c;
+  border: 2px solid #1a315c;
+  letter-spacing: 2px;
+}
+
+.show {
+  display: none;
 }
 
 .about {
@@ -1186,6 +1243,18 @@ footer p a {
   .online-market-section .market-details,
 .new-location-section .location-details {
     padding: 0rem 2rem 2rem 2rem;
+  }
+
+  .facility-comment-form {
+    width: 100%;
+    left: 0;
+  }
+  .facility-comment-form .comment-display {
+    background-color: #fff;
+    padding: 2rem 2rem;
+  }
+  .facility-comment-form .comment-display input {
+    width: 100%;
   }
 }
 @media (max-height: 750px) {
