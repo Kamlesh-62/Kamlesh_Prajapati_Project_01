@@ -57,6 +57,29 @@
         animation: slidingLine 1s ease-in-out;             
     }
 }
+// top button insert through js
+.top-btn i{
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    z-index: 9999;
+    font-size: 2rem;
+    background-color: $secondaryBackgroundColor;
+    color: $designColor;
+    border-radius: 50%;
+    animation: fade 1s ease-in-out;
+}
+.top-btn i.show{
+    display: none;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 // dropdown menu for Small screen
 .hamburger-btn{

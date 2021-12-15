@@ -11,7 +11,7 @@ menuApp.hamburgerMenu.innerHTML = `<span class="hamburger-btn"><i class="fas fa-
 menuApp.menuDiv.appendChild(menuApp.hamburgerMenu);
 
 // ===============
-menuApp.hamburgerButton = document.querySelector('.fas');
+menuApp.hamburgerButton = document.querySelector('.fa-bars');
 menuApp.hamburgerClick = function(){
 menuApp.hamburgerButton.addEventListener('click', function(){
     menuApp.listOfMenu.classList.toggle('active');
@@ -22,17 +22,27 @@ menuApp.hamburgerClick();
 
 // =====================
 // scroll to top button
-const createButtonGoToTop = document.createElement('div');
-createButtonGoToTop.innerHTML = `<a class='go-to-top-link btn'>TOP </a>`;
 
-const heroPage = document.querySelector('.hero-page');
-console.log(createButtonGoToTop);
+const ScrollToTop = {};
+// select element in to variable
+ScrollToTop.heroPage = document.querySelector('.hero-page');
+ScrollToTop.rootElement = document.documentElement;
 
+// add top font-awesome button on the html 
+ScrollToTop.topButton = `<div class = "top-btn"> <span ><a href="#home" class='go-to-top-link '><i class="show fas fa-chevron-circle-up"></i></a></span></div>`;
+ScrollToTop.heroPage.insertAdjacentHTML('afterend', ScrollToTop.topButton);
 
+ScrollToTop.fontAwesome = document.querySelector('.fa-chevron-circle-up')
 
-
-
-
+ScrollToTop.scrollUp = function(){
+    if (ScrollToTop.rootElement.scrollTop > 200) {
+        ScrollToTop.fontAwesome.classList.remove("show")
+    }
+    else {
+        ScrollToTop.fontAwesome.classList.add("show")
+    }
+}
+window.addEventListener('scroll', ScrollToTop.scrollUp);
 
 
 // get in touch: click on get in Touch button pop up comment box.
