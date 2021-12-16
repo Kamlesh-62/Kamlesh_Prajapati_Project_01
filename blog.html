@@ -125,10 +125,11 @@
         <section class="comment-form-section" >
             <form action="#">
                 <label for="customer-name" class="sr-only"> Customer Name</label>
-                <input type="text" class="customer-name" placeholder="Name">
+                <input type="text" id="customer-name" class="customer-name" placeholder="Name">
                 <label for="email" class="sr-only">Email address</label>
-                <input type="email" placeholder="Email address">
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <input type="email" id="email" placeholder="Email address">
+                <label for="comment-textarea" class="sr-only">comment here</label>
+                <textarea name="comment" id="comment-textarea" cols="30" rows="10" placeholder="Comment"></textarea>
                 <button class="post-btn btn">post comment</button>
             </form>
         </section>

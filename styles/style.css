@@ -389,7 +389,7 @@ h2 {
   right: 10px;
   bottom: 50px;
   z-index: 9999;
-  font-size: 2rem;
+  font-size: 2.2rem;
   background-color: #283f4d;
   color: #0cadc0;
   border-radius: 50%;
@@ -698,8 +698,7 @@ h2 {
 .facilities .facilities-section .facility {
   width: calc(100% / 2);
 }
-.facilities .facilities-section .facility h2 {
-  font-size: 40px;
+.facilities .facilities-section .facility .get-in-touch {
   cursor: pointer;
 }
 .facilities .facilities-section .facility p {
@@ -735,22 +734,43 @@ h2 {
 }
 
 .facility-comment-form {
-  width: 50%;
+  width: 40%;
   position: fixed;
-  bottom: 20%;
-  left: 25%;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
   z-index: 777;
+  background: #fff;
+}
+.facility-comment-form .comment-form-socialMedia-icon {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5rem;
+  background: #1a315c;
+}
+.facility-comment-form .comment-form-socialMedia-icon li a {
+  color: #fff;
 }
 .facility-comment-form .comment-display {
-  background-color: #fff;
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   position: relative;
 }
-.facility-comment-form .comment-display span {
+.facility-comment-form .comment-display .close-btn {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 15px;
   font-size: 2rem;
   color: red;
   cursor: pointer;
@@ -761,6 +781,7 @@ h2 {
   border-bottom: 2px solid #1a315c;
   width: calc(99% / 2);
   margin-bottom: 2rem;
+  margin-top: 1rem;
   padding-bottom: 0.5rem;
 }
 .facility-comment-form .comment-display textarea {
@@ -768,7 +789,7 @@ h2 {
   width: 100%;
   background: #fff;
   border: 2px solid #1a315c;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .facility-comment-form .comment-display button {
@@ -776,7 +797,7 @@ h2 {
   color: #fff;
   text-align: center;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 2px solid #1a315c;
 }
 .facility-comment-form .comment-display button:hover, .facility-comment-form .comment-display button:focus {
@@ -786,8 +807,31 @@ h2 {
   letter-spacing: 2px;
 }
 
-.show {
+.showBox {
   display: none;
+}
+
+#overlay {
+  background-color: rgba(40, 63, 77, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 666;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fa-info-circle {
+  color: #0cadc0;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 .about {
@@ -1037,6 +1081,13 @@ footer p a {
     min-width: 500px;
   }
 
+  .facility-comment-form {
+    width: 60%;
+  }
+  .facility-comment-form .comment-display input {
+    width: 100%;
+  }
+
   .online-market-section .market-details {
     padding: 3rem 1rem 0rem 6rem;
   }
@@ -1247,11 +1298,10 @@ footer p a {
 
   .facility-comment-form {
     width: 100%;
-    left: 0;
   }
   .facility-comment-form .comment-display {
     background-color: #fff;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
   }
   .facility-comment-form .comment-display input {
     width: 100%;

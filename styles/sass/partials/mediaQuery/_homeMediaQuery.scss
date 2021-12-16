@@ -4,6 +4,13 @@
         top: -400px;
         min-width: 500px;
     }
+    // facility section
+    .facility-comment-form{
+        width: 60%;
+        .comment-display input{
+            width: 100%;
+        }
+    }
     // online market and location section 
     .online-market-section{
         .market-details{
@@ -16,6 +23,7 @@
     .new-location-section .location-details{
        padding: 3rem 3rem 3rem 1rem ;
     }
+
 }
 // ============================
 // media query for 820px
@@ -55,6 +63,7 @@
             width: 100%;
         }
     }
+    
     // =============================
     // online market and location section
     .online-market-section{
@@ -190,10 +199,9 @@
     }
     .facility-comment-form{
         width: 100%;   
-        left: 0;
         .comment-display{
             background-color: $whiteColor;
-            padding: 2rem 2rem;
+            padding: 1rem 1rem;
             input{
                 width: 100%;
             }
