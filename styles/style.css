@@ -870,6 +870,7 @@ h2 {
 .online-market-section .market-details .read-btn {
   background-color: #ccedfb;
   border: 2px solid #ccedfb;
+  color: #1a315c;
 }
 .online-market-section .market-details .read-btn:hover, .online-market-section .market-details .read-btn:focus {
   background-color: #283f4d;
@@ -911,6 +912,7 @@ h2 {
 .new-location-section .location-details .read-btn {
   background-color: #ccedfb;
   border: 2px solid #ccedfb;
+  color: #1a315c;
 }
 .new-location-section .location-details .read-btn:hover, .new-location-section .location-details .read-btn:focus {
   background-color: #283f4d;

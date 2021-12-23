@@ -45,22 +45,4 @@ myApp.scrollUp = function(){
 window.addEventListener('scroll', myApp.scrollUp);
 
 
-// get in touch: click on get-in-Touch header or help font-awesome button to pop-up comment box.
-// create a variable and select html selector
-myApp.facilitySection = document.querySelector('.facility-comment-form')
-myApp.getInTouchHeader= document.querySelector('.get-in-touch')
-myApp.closeButton = document.querySelector('.close-btn');
-myApp.overLay = document.querySelector('#overlay')
- 
-// add an event listner to show comment-form and overlay on background
-myApp.getInTouchHeader.addEventListener("click",function(){
-    myApp.facilitySection.classList.remove('showBox');
-    myApp.overLay.classList.add('show')
-})
-// add an event listner to close comment-form and overlay background
-myApp.closeButton.addEventListener("click", function () {
-    myApp.facilitySection.classList.add('showBox');
-    myApp.overLay.classList.remove('show')
-})
-                
 myApp.init();

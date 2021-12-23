@@ -32,6 +32,8 @@
         .read-btn{
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
+            color: $primaryColor;
+
 
             &:hover,
             &:focus{
@@ -72,6 +74,7 @@
         .read-btn{
             background-color:$primaryBackgroundColor;
             border: 2px solid $primaryBackgroundColor;
+            color: $primaryColor;
 
             &:hover,
             &:focus{
