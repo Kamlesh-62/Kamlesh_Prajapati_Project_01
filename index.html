@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- header section start here -->
-    <header id="home">
+    <header id="home" class="home-header">
         <!-- nav section start here -->
         <nav class="nav-bar wrapper">
             <div class="website-logo">
@@ -164,7 +164,16 @@
             <div class="search-style wrapper">
                 <h2>Search by style</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore eum accusamus. Assumenda aperiam voluptatem sapiente ullam, earum sunt aliquid molestiasexpedita aliquam, consectetur doloribus veritatis corporis repellendus fugiat impedit porroatque eos itaque qui?</p>
-                <button class="find-btn btn">find out more</button>
+                <button class="find-btn btn search-button">find out more</button>
+            </div>
+            <div class="search-style-hidden-window showBox">
+                <h2>Search by style</h2>
+                <form action="#">
+                    <input type="text" id="search-input">
+                    <label for="search-input" class="sr-only" >Search your style</label>
+                    <button class="search-btn btn">find out more</button>
+                    <span class="search-close-btn"><i class="fas fa-times"></i></span>
+                </form>
             </div>
         </section>
         <!-- search by style section end here -->
@@ -179,5 +188,6 @@
 
     <script src="./app.js"></script>
     <script src="./home.js"></script>
+    <script src="./searchStyle.js"></script>
 </body>
 </html>

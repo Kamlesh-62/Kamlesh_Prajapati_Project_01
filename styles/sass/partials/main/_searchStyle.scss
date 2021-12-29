@@ -14,4 +14,45 @@
             }
         }
     }
+    .search-style-hidden-window{
+        background: $primaryColor;
+        width: 70%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        text-align: center;
+        z-index: 777;
+        h2{
+            color: $whiteColor;
+        }
+        input[type="text"]{
+            text-align: center;
+            display: block;
+            width: 70%;
+            height: 2rem;
+            color: $primaryColor;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .search-btn{
+            margin-bottom: 2rem;
+            color: $primaryColor;
+            background-color: $whiteColor;
+            border: 2px solid $primaryColor;
+            &:hover{
+                background: transparent;
+                color: $whiteColor;
+                border: 2px solid $whiteColor;
+            }
+        }
+        .search-close-btn{
+            color: $whiteColor;
+            font-size: 1.5rem;
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
 }

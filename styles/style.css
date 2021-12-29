@@ -311,7 +311,7 @@ h2 {
   text-transform: lowercase;
 }
 
-#home {
+.home-header {
   background: url("../textilee-assets/header-home.jpg");
   height: 80vh;
   background-position: center;
@@ -390,8 +390,8 @@ h2 {
   bottom: 50px;
   z-index: 9999;
   font-size: 2.2rem;
-  background-color: #283f4d;
-  color: #0cadc0;
+  background-color: #ccedfb;
+  color: #283f4d;
   border-radius: 50%;
   -webkit-animation: fade 1s ease-in-out;
           animation: fade 1s ease-in-out;
@@ -487,7 +487,7 @@ h2 {
             transform: scaleX(1);
   }
 }
-#blog {
+.blog-header {
   background: url("../textilee-assets/blog-header.jpg");
   height: 70vh;
   background-position: center;
@@ -510,7 +510,7 @@ h2 {
           animation: slidingLine 1s ease-in-out;
 }
 
-#contact {
+.contact-header {
   background: url("../textilee-assets/contact-header.jpg");
   height: 50vh;
   background-position: center;
@@ -943,6 +943,48 @@ h2 {
   border: 2px solid #1a315c;
   letter-spacing: 2px;
 }
+.search-style-section .search-style-hidden-window {
+  background: #1a315c;
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 777;
+}
+.search-style-section .search-style-hidden-window h2 {
+  color: #fff;
+}
+.search-style-section .search-style-hidden-window input[type=text] {
+  text-align: center;
+  display: block;
+  width: 70%;
+  height: 2rem;
+  color: #1a315c;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.search-style-section .search-style-hidden-window .search-btn {
+  margin-bottom: 2rem;
+  color: #1a315c;
+  background-color: #fff;
+  border: 2px solid #1a315c;
+}
+.search-style-section .search-style-hidden-window .search-btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.search-style-section .search-style-hidden-window .search-close-btn {
+  color: #fff;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
 
 main {
   background-color: #ccedfb;
@@ -1304,6 +1346,10 @@ footer p a {
     padding: 1rem 1rem;
   }
   .facility-comment-form .comment-display input {
+    width: 100%;
+  }
+
+  .search-style-section .search-style-hidden-window {
     width: 100%;
   }
 }
