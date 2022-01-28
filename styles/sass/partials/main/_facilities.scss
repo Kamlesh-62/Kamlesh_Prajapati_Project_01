@@ -8,7 +8,6 @@
         .facility{
             width: calc(100% / 2);
             .get-in-touch{
-                // color: $designColor;
                 cursor: pointer;
             }
             p{
@@ -61,7 +60,7 @@
         margin: 0 auto;
         justify-content: space-evenly;
         font-size: 1.5rem;
-        background: $primaryColor;
+        background: $secondaryBackgroundColor;
           li a{
                 color: $whiteColor;
             }  
@@ -75,14 +74,14 @@
             top: 10px;
             right: 15px;
             font-size: 2rem;
-            color: red;
+            color: $secondaryDesignColor;
             cursor: pointer;
         }
         input{
             border: none;
             background-color: $whiteColor;
             border-bottom: 2px solid $primaryColor;
-            width: calc(99% / 2);
+            width: 80%;
             margin-bottom: 2rem;
             margin-top: 1rem;
             padding-bottom: 0.5rem;
@@ -96,15 +95,15 @@
             padding: 1rem;
         }
         button{
-            background: $primaryColor;
+            background: $secondaryBackgroundColor;
             color: $whiteColor;
             text-align: center;
             width: 100%;
             margin-bottom: 1rem;
-            border: 2px solid $primaryColor;
+            border: 2px solid $secondaryDesignColor;
                 &:hover,
                 &:focus{
-                @include button($whiteColor,$primaryColor,$primaryColor);
+                @include button($whiteColor,$secondaryDesignColor,$secondaryDesignColor);
             }
         }
     }     
@@ -130,6 +129,6 @@
     pointer-events: all;
 }
 .fa-info-circle{
-    color: $designColor;
+    color: $primaryColor;
     animation: bounce 1s infinite;
 }

@@ -9,6 +9,7 @@ html{
     font-size: 125%;
     font-family: $primaryFontStyle;
     overflow-x: hidden;
+    scroll-behavior: smooth;    
 }
 .wrapper{
     max-width:1180px;

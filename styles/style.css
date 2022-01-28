@@ -256,6 +256,7 @@ html {
   font-size: 125%;
   font-family: "Pacifico", cursive;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -436,8 +437,8 @@ h2 {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   100% {
     -webkit-transform: scale(1);
@@ -451,8 +452,8 @@ h2 {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   100% {
     -webkit-transform: scale(1);
@@ -757,7 +758,7 @@ h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 1.5rem;
-  background: #1a315c;
+  background: #283f4d;
 }
 .facility-comment-form .comment-form-socialMedia-icon li a {
   color: #fff;
@@ -772,14 +773,14 @@ h2 {
   top: 10px;
   right: 15px;
   font-size: 2rem;
-  color: red;
+  color: #283f4d;
   cursor: pointer;
 }
 .facility-comment-form .comment-display input {
   border: none;
   background-color: #fff;
   border-bottom: 2px solid #1a315c;
-  width: calc(99% / 2);
+  width: 80%;
   margin-bottom: 2rem;
   margin-top: 1rem;
   padding-bottom: 0.5rem;
@@ -793,17 +794,17 @@ h2 {
   padding: 1rem;
 }
 .facility-comment-form .comment-display button {
-  background: #1a315c;
+  background: #283f4d;
   color: #fff;
   text-align: center;
   width: 100%;
   margin-bottom: 1rem;
-  border: 2px solid #1a315c;
+  border: 2px solid #283f4d;
 }
 .facility-comment-form .comment-display button:hover, .facility-comment-form .comment-display button:focus {
   background-color: #fff;
-  color: #1a315c;
-  border: 2px solid #1a315c;
+  color: #283f4d;
+  border: 2px solid #283f4d;
   letter-spacing: 2px;
 }
 
@@ -829,7 +830,7 @@ h2 {
 }
 
 .fa-info-circle {
-  color: #0cadc0;
+  color: #1a315c;
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
@@ -1105,7 +1106,7 @@ main .comment-form-section button:hover, main .comment-form-section button:focus
 }
 
 footer {
-  background: #000;
+  background: #1a315c;
   padding: 0.5rem 0;
 }
 footer p {
